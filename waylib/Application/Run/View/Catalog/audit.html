@@ -1,0 +1,154 @@
+<extend name="Common/base" />
+<block name="menus">
+	{:W('Public/catalog_menus')}
+</block>
+<block name="content">
+	<if condition="($status eq 1)">
+		<div class="choose">
+			<div class="kind">
+				<form class="outer">
+					<div class="choose5">
+						<p>是否已审核</p>
+						<select id="cStatus">
+							<option value="0" {$cStatus==0?'selected':''}>未审核</option>
+							<option value="1" {$cStatus==1?'selected':''}>审核已通过</option>
+						</select>
+					</div>
+					<div class="search">
+						<img src="__IMG__/search.png" id="searchBtn"/>
+					</div>
+				</form>
+				<div class="more_warden">
+					<img src="__IMG__/plsh.png" id="auditAll"/>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				//搜索
+				$('#searchBtn').click(function(){
+					var cStatus = $('#cStatus option:selected').val();
+					location.href = "{:U('Catalog/audit')}?cStatus="+cStatus;
+				});
+			})
+		</script>
+		<else/>
+	</if>
+	<div class="main_biaoge">
+		<table  class="table1 table-bordered table-striped table table11">
+				<tr>
+					<th><input type="checkbox" id="all"/>选择</th>
+					<th>书名</th>
+					<th>ISBN</th>
+					<th>作者</th>
+					<th>封面</th>
+					<th>操作</th>
+				</tr>
+			<if condition="($status eq 1)">
+				<volist name="lists" id="v">
+					<tr>
+						<td><input type="checkbox" name="id" value="{$v.book_desc_id}"/></td>
+						<td>{$v.title}</td>
+						<td>{$v.isbn}</td>
+						<td>{$v.author}</td>
+						<td><img src="{$v.cover_url}"/></td>
+						<td>
+							<a href="{:U('Catalog/upload',['id'=>$v[book_desc_id]])}" class="up_face">上传封面</a>
+							<if condition="$v[cover_status] eq 0">
+								<a href="javaScript:;" class="sh_pass" attr-id="{$v.book_desc_id}">审核通过</a>
+								<else/>
+							</if>
+						</td>
+					</tr>
+				</volist>
+				<else/>
+			</if>
+			</table>
+		<div class="reader_more">
+			<div class="pagelist">
+				{$page}
+			</div>
+		</div>
+	</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(3)").addClass("on");
+			$(".main_right_top ul").children(":eq(3)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(3)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(1)").addClass("onup");
+
+			//全选
+			 $("#all").click(function(){
+				 if($(this).is(':checked')){
+					 $(".table11 tr td :checkbox").prop("checked",true);
+				 }else {
+					 $(".table11 tr td :checkbox").prop("checked",false);
+				 }
+			 });
+
+			//审核通过
+			$('.sh_pass').click(function(){
+				var id = $(this).attr('attr-id');
+				layer.open({
+					content: '确认通过审核?',
+					icon: 3,
+					btn: ['是', '否'],
+					yes: function () {
+						//审核
+						$.ajax({
+							type:'get',
+							url:"{:U('Catalog/auditEdit')}",
+							data:'book_desc_id='+id,
+							dataType:'json',
+							success:function(data){
+								if(data.code == 1){
+									var url = "{:U('Catalog/audit')}";
+									return dialog.success('审核成功',url);
+								}else {
+									return dialog.error(data.message);
+								}
+							}
+						});
+					}
+				});
+			});
+
+
+			//批量审核
+			$('#auditAll').click(function(){
+				//获取到勾选的多个id
+				var chk_val = [];
+				var bed_obj = $("input[name='id']");
+				for(var i in bed_obj){
+					if(bed_obj[i].checked){
+						chk_val.push(bed_obj[i].value);
+					}
+				}
+				layer.open({
+					content: '确认通过审核?',
+					icon: 3,
+					btn: ['是', '否'],
+					yes: function () {
+						//审核
+						$.ajax({
+							type:'post',
+							url:"{:U('Catalog/auditEditAll')}",
+							data:'ids='+chk_val,
+							dataType:'json',
+							success:function(data){
+								if(data.code == 1){
+									var url = "{:U('Catalog/audit')}";
+									return dialog.success('审核成功',url);
+								}else {
+									return dialog.error(data.message);
+								}
+							}
+						});
+					}
+				});
+			})
+		})
+	</script>
+</block>

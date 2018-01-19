@@ -1,0 +1,171 @@
+<extend name="Common/base" />
+<block name="style">
+	<link rel="stylesheet" href="__CSS__/swiper-3.4.1.min.css" />
+	<link rel="stylesheet" href="__CSS__/video-js.css" />
+	<script type="text/javascript" src="__JS__/swiper-3.4.1.jquery.min.js" ></script>
+</block>
+<block name="menus">
+	{:W('Public/exception_menus')}
+</block>
+<block name="content">
+					<div class="hand_top">
+						{:W('Public/exception_lists')}
+						<div class="shadow_tiao">
+							<img src="__IMG__/tiao1.png" />
+						</div>
+						<div class="success_check">
+							<div class="success_title5">
+								<img src="__IMG__/chaxunyonghu4.png" />
+							</div>
+							<div class="success_pro">
+								<img src="__IMG__/chaxunyonghu42.png" />
+							</div>
+							
+							<div class="main_biaoge">
+								<div class="two_video outer">
+									<div class="m">
+										<video id="my-video" class="video-js" controls preload="auto" width="623" height="349" poster="m.png" data-setup="{}">
+											<source src="http://jq22com.qiniudn.com/jq22-sp.mp4" type="video/mp4">
+
+										</video>
+										<script src="__JS__/video.min.js"></script>
+										<script type="text/javascript">
+											var myPlayer = videojs('my-video');
+											videojs("my-video").ready(function() {
+												var myPlayer = this;
+												myPlayer.play();
+											});
+										</script>
+										<div class="ju_out">
+											<div class="juyu">
+												<a href="#">局域网</a>
+											</div>
+											<div class="outinter">
+												<a href="#">外网</a>
+											</div>
+										</div>
+									</div>
+									<div class="r">
+										<video id="my-video2" class="video-js" controls preload="auto" width="623" height="349" poster="m.png" data-setup="{}">
+											<source src="http://jq22com.qiniudn.com/jq22-sp.mp4" type="video/mp4">
+
+										</video>
+										<script src="__JS__/video.min.js"></script>
+										<script type="text/javascript">
+											var myPlayer = videojs('my-video2');
+											videojs("my-video2").ready(function() {
+												var myPlayer = this;
+												myPlayer.play();
+											});
+										</script>
+										<div class="ju_out" style="margin-left: 0;">
+											<div class="juyu">
+												<a href="#">局域网</a>
+											</div>
+											<div class="outinter">
+												<a href="#">外网</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="btn_two outer">
+									<div class="ft_btn">封停该用户</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="borrow_his outer success3">
+						<div class="borrow_icon">
+							<div class="borrow_head outer">
+								<img src="__IMG__/head.jpg" class="head_pic" />
+								<img src="__IMG__/tsgyhyy.png" class="head_circle" />
+								<img src="__IMG__/znwtyh.png" class="waylib_user" />
+							</div>
+							<div class="borrow_head_left">
+								<div class="user_info">
+									<ul>
+										<li>读者姓名:小黄黄</li>
+										<li>联系电话:18500941354</li>
+										<li>读者证号:511024199310291783</li>
+									</ul>
+								</div>
+								<div class="borrow_status">
+									<ul class="outer">
+										<li>
+											<img src="__IMG__/yj.png" />
+										</li>
+										<li style="margin-left: 2%;margin-top: 1%;">
+											<p>已交</p>
+										</li>
+										<li style="margin-left: 10%;"><img src="__IMG__/qk.png" /></li>
+										<li style="margin-left: 2%;margin-top: 1%;">
+											<p>0.00￥</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="borrow_btn">
+								<img src="__IMG__/yhjyan.png" />
+							</div>
+						</div>
+						<div class="his_icon outer">
+							<div class="his_icon_left">
+								<img src="__IMG__/fm.png" />
+							</div>
+							<div class="his_icon_right">
+								<ul>
+									<li>书名:《我是猫》</li>
+									<li>图书条码:511024199310291783</li>
+									<li>ISBN:94-123-123-123-12345</li>
+									<li class="outer">
+										<img src="__IMG__/jy.png" />
+										<p>2017/11/20</p>
+									</li>
+								</ul>
+							</div>
+							<div class="his_btn">
+								<img src="__IMG__/tslsjyan.png" />
+							</div>
+						</div>
+						<div class="look_icon outer">
+							<div class="look_icon_left">
+								<img src="__IMG__/tb.png" />
+							</div>
+							<div class="look_icon_right">
+								<ul>
+									<li>借出图书馆:阿坝州彝族自治州图书馆</li>
+									<li>借出机器:1#自助借还机</li>
+								</ul>
+							</div>
+							<div class="look_btn">
+								<img src="__IMG__/jhjkan.png" />
+							</div>
+						</div>
+					</div>
+					<div class="pagecircle pagecircle2 outer">
+						<div class="before_step">
+							<a href="{:U('Exception/handle1_1')}">返回第一步</a>
+						</div>
+						<ul class="outer">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="pagefan"></li>
+						</ul>
+					</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+
+			$(".main_right_top ul").children(":eq(6)").addClass("on");
+			$(".main_right_top ul").children(":eq(6)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(6)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(0)").addClass("onup");
+			$(".swiper-wrapper").children(":eq(0)").addClass("handleon");
+
+
+		})
+	</script>
+</block>

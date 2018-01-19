@@ -1,0 +1,78 @@
+<extend name="Common/base" />
+<block name="content">
+	<div class="choose">
+		<div class="kind">
+			<form class="outer">
+				<if condition="($status eq 1)">
+						<div class="choose5">
+							<p>图书馆</p>
+							<select>
+								<volist name="librarys" id="v">
+									<option value="{$v.id}" {$libraryId==$v[id]?'selected':''}>{$v.name}</option>
+								</volist>
+							</select>
+						</div>
+						<div class="search">
+							<img src="__IMG__/search.png" />
+						</div>
+					<else/>
+
+				</if>
+				<div class="add_them">
+					<a href="#" class="example3">
+						<img src="__IMG__/tjzt.png"/>
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="main_biaoge">
+		<table  class="table1 table-bordered table-striped table table7 ">
+				<tr>
+					<th>专题BANNER</th>
+					<th>专题名</th>
+					<th>专题说明</th>
+					<th>图书馆</th>
+					<th>专题状态</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td>
+						<img src="__IMG__/bbg.png" />
+					</td>
+					<td>仙侠</td>
+					<td>小黄黄黄黄黄小黄黄黄黄黄小黄黄黄黄黄小黄黄黄黄黄小黄黄黄黄黄小黄黄黄黄黄小黄黄黄黄黄小黄黄黄黄黄小黄黄黄黄黄小黄黄黄黄黄
+					</td>
+					<td>四川云图</td>
+					<td>
+						<a href="#">上线</a>
+						<a href="#">
+							<img src="__IMG__/xj.png" />
+						</a>
+					</td>
+					<td>
+						<a href="#" class="example4">
+							<img src="__IMG__/bianji.png" />
+						</a>
+						<a href="them_list.html">
+							<img src="__IMG__/chakan.png" />
+						</a>
+					</td>
+				</tr>
+			</table>
+		<div class="reader_more">
+			<p>1<span>/220</span>></p>
+		</div>
+	</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(8)").addClass("on");
+			$(".main_right_top ul").children(":eq(8)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(8)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(1)").addClass("onup");
+
+		})
+	</script>
+</block>

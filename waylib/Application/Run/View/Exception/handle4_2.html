@@ -1,0 +1,138 @@
+<extend name="Common/base" />
+<block name="style">
+	<link rel="stylesheet" href="__CSS__/swiper-3.4.1.min.css" />
+	<script type="text/javascript" src="__JS__/swiper-3.4.1.jquery.min.js" ></script>
+</block>
+<block name="menus">
+	{:W('Public/exception_menus')}
+</block>
+<block name="content">
+	<div class="hand_top">
+		{:W('Public/exception_lists')}
+						<div class="shadow_tiao">
+							<img src="__IMG__/tiao1.png" />
+						</div>
+						<div class="success_check">
+							<div class="success_title4">
+								<img src="__IMG__/guizongyoushu2.png" />
+							</div>
+							<div class="success_pro">
+								<img src="__IMG__/guizongyoushu22.png" />
+							</div>
+							<div class="main_biaoge">
+								<table  class="table1 table-bordered table-striped table table20">
+									<tr>
+										<th>姓名</th>
+										<th>电话号码</th>
+										<th>读者证号</th>
+										<th>借出图书馆</th>
+										<th>借出机器</th>
+										<th>借出时间</th>
+										<th>图书条码</th>
+										<th>书名</th>
+										<th>ISBN号</th>
+										<th>状态</th>
+										<th>操作</th>
+									</tr>
+									<tr>
+										<td>{$lists.user_real_name}</td>
+										<td>{$lists.u_mobile}</td>
+										<td>{$lists.u_name}</td>
+										<td>{$lists.library}</td>
+										<td>{$lists.machine_name}</td>
+										<td>{$lists.lend_created_time}</td>
+										<td>{$lists.tiaoma}</td>
+										<td>{$lists.title}</td>
+										<td>{$lists.isbn}</td>
+										<td>{$lists[is_back]==1?'在借':'已还'}</td>
+										<if condition="$lists[is_back] == 1">
+											<td><a href="javaScript:;" style="color: red" class="del" attr-co="{$co}" attr-id="{$lists.u_user_lend_id}" attr-lId="{$lists.library_id}" >清除记录</a></td>
+											<else/>
+											<td><a href="javaScript:;" style="color: red"  class="down" attr-co="{$co}" attr-bookId="{$lists.book_id}"  >下架</a></td>
+										</if>
+									</tr>
+								</table>
+							</div>
+							<div class="caozuo outer">
+								<!--<a href="#">清除记录</a>-->
+								<!--<div class="upjia">下架</div>-->
+							</div>
+							<div class="pagecircle pagecircle2 outer">
+								<div class="before_step"><a href="{:U('Exception/handle4_1')}">上一步</a></div>
+								<ul class="outer">
+									<li></li>
+									<li class="pagefan4"></li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			//清除记录
+			$('.del').click(function(){
+				var id = $(this).attr('attr-id');//借阅ID
+				var co = $(this).attr('attr-co');//搜索内容
+				layer.open({
+					content: '您确定要清除该记录?',
+					icon: 3,
+					btn: ['是', '否'],
+					yes: function () {
+						$.ajax({
+							type:'get',
+							url:"{:U('Exception/handle2Del')}",
+							data:'lendId='+id,
+							dataType:'json',
+							success:function(data){
+								if(data.code ==1){
+									var url = "{:U('Exception/handle4_1')}";
+									return dialog.success('清除成功',url);
+								}else {
+									return dialog.error(data.message);
+								}
+							}
+						})
+					}
+				});
+			});
+
+			//下架
+			$('.down').click(function(){
+				var bookId = $(this).attr('attr-bookId');//bookId
+				layer.open({
+					content: '您确定要下架该图书?',
+					icon: 3,
+					btn: ['是', '否'],
+					yes: function () {
+						$.ajax({
+							type:'get',
+							url:"{:U('Exception/handle4Down')}",
+							data:'bookId='+bookId,
+							dataType:'json',
+							success:function(data){
+								if(data.code ==1){
+									var url = "{:U('Exception/handle4_1')}";
+									return dialog.success('下架成功',url);
+								}else {
+									return dialog.error(data.message);
+								}
+							}
+						})
+					}
+				});
+			});
+
+
+			$(".main_right_top ul").children(":eq(6)").addClass("on");
+			$(".main_right_top ul").children(":eq(6)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(6)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(0)").addClass("onup");
+			$(".swiper-wrapper").children(":eq(3)").addClass("handleon");
+
+
+
+		})
+	</script>
+</block>

@@ -1,0 +1,47 @@
+<extend name="Common/base" />
+<block name="content">
+
+	<if  condition="($status eq 1)">
+		<div class="choose">
+			<div class="kind">
+				<form class="outer">
+					<div class="choose5 message_inp">
+						<p>图书馆:</p>
+						<select id="library">
+							<volist name="librarys" id="v">
+								<option value="{$v.id}">{$v.name}</option>
+							</volist>
+						</select>
+					</div>
+				</form>
+			</div>
+		</div>
+		<else/>
+		<input type="hidden" name="libraryId" id="libId" value="{$libraryId}">
+	</if>
+		<div class="main_biaoge message_box">
+			<div class="message">
+				<div class="message_kuang">推送内容</div>
+				<div class="message_info">
+					<div class="message_form">
+						<textarea></textarea>
+					</div>
+					<div class="ts_btn">
+						<a href="#">推送</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(8)").addClass("on");
+			$(".main_right_top ul").children(":eq(8)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(8)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(2)").addClass("onup");
+
+		})
+	</script>
+</block>

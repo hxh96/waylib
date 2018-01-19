@@ -1,0 +1,131 @@
+<extend name="Common/base" />
+<block name="menus">
+	{:W('Public/borrow_menus')}
+</block>
+<block name="content">
+	<div class="choose">
+		<div class="kind">
+			<form class="outer">
+				<div class="choose8">
+					<select id="type">
+						<option value="u_mobile" {$u_type=='u_mobile'?'selected':''}>手机号:</option>
+						<option value="u_name" {$u_type=='u_name'?'selected':''}>读者证号:</option>
+					</select>
+					<input type="text" class="input-medium" id="content" value="{$content}"/>
+				</div>
+				<if condition="($status eq 1)">
+					<div class="choose5 outer">
+						<p>图书馆:</p>
+						<select id="lib">
+							<option value="">请选择</option>
+							<volist name="librarys" id="v">
+								<option value="{$v.id}" {$library_id==$v[id]?'selected':''}>{$v.name}</option>
+							</volist>
+						</select>
+					</div>
+					<else/>
+				</if>
+				<div class="choose2 outer">
+					<p>图书条形码:</p>
+					<input type="text" class="input-medium" id="tiaoma" value="{$tiaoma}"/>
+				</div>
+				<!--<div class="choose10">-->
+					<!---->
+					<!--<input type="radio" name="a" style="margin-left: 2%;"/>-->
+					<!--<p>借</p>-->
+					<!--<input type="radio" name="a" style="margin-left: 1%;"/>-->
+					<!--<p>还</p>-->
+					<!--<input type="radio" name="a" style="margin-left: 1%;"/>-->
+					<!--<p>续</p>-->
+				<!--</div>-->
+				<div class="search">
+					<img src="__IMG__/search.png"  id="searchBtn" attr-status="{$status}" attr-libId="{$libId}"/>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			//搜索
+			$('#searchBtn').click(function(){
+				var type = $('#type option:selected').val();//类型  手机号或证号
+				var content = $('#content').val();//手机号或证号
+				var status = $(this).attr('attr-status');//身份状态
+				if(status == 1){
+					var libId = $('#lib option:selected').val();//图书馆ID
+				}else {
+					var libId = $(this).attr('attr-libId');//图书馆ID
+				}
+				var tiaoma = $('#tiaoma').val();//条码
+				//判断是否根据手机号搜索
+				if(content){
+					//判断条码是否存在
+					if(tiaoma){
+						location.href = "{:U('Borrow/hisBorrow')}?ty="+type+'&co='+content+'&lib='+libId+'&tm='+tiaoma;
+					}else {
+						location.href = "{:U('Borrow/hisBorrow')}?ty="+type+'&co='+content+'&lib='+libId;
+					}
+				}else {
+					//判断条码是否存在
+					if(tiaoma){
+						location.href = "{:U('Borrow/hisBorrow')}?ty="+type+'&lib='+libId+'&tm='+tiaoma;
+					}else {
+						if(libId){
+							location.href = "{:U('Borrow/hisBorrow')}?ty="+type+'&lib='+libId;
+						}else {
+							return dialog.error('请先输入搜索条件');
+						}
+					}
+				}
+
+			})
+		})
+	</script>
+	<div class="main_biaoge">
+		<table  class="table1 table-bordered table-striped table table4">
+				<tr>
+					<th>姓名</th>
+					<th>电话号码</th>
+					<th>读者证号</th>
+					<th>借出图书馆</th>
+					<th>借出机器</th>
+					<th>借出时间</th>
+					<th>图书条码</th>
+					<th>书名</th>
+					<th>ISBN</th>
+					<th>操作</th>
+				</tr>
+			<volist name="lists" id="v">
+				<tr>
+					<td>{$v.user_real_name}</td>
+					<td>{$v.u_mobile}</td>
+					<td>{$v.u_name}</td>
+					<td>{$v.library}</td>
+					<td>{$v.machine_name}</td>
+					<td>{$v.lend_created_time}</td>
+					<td>{$v.tiaoma}</td>
+					<td>{$v.title}</td>
+					<td>{$v.isbn}</td>
+					<td><a href="{:U('Borrow/hisInfo',['lId'=>$v[u_user_lend_id],'uId'=>$v[user_id]])}">查看</a></td>
+				</tr>
+			</volist>
+			</table>
+		<div class="reader_more">
+			<div class="pagelist">
+				{$page}
+			</div>
+		</div>
+	</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(1)").addClass("on");
+			$(".main_right_top ul").children(":eq(1)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(1)").find("a").find(".icon1").hide();
+
+			$(".main_left_ul ul").children(":eq(1)").addClass("onup");
+
+		})
+	</script>
+</block>

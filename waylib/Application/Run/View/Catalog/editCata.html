@@ -1,0 +1,105 @@
+<extend name="Common/base" />
+<block name="menus">
+	{:W('Public/catalog_menus')}
+</block>
+<block name="content">
+	<div class="catalog_list">
+		<form>
+			<input type="hidden" name="book_desc_id" value="{$book_desc_id}">
+			<ul class="outer">
+				<li>
+					<p>ISBN:</p>
+					<input type="text" name="isbn" value="{$isbn}"/>
+				</li>
+				<li>
+					<p>尺寸:</p>
+					<input type="text" name="size" value="{$size}"/>
+				</li>
+				<li>
+					<p>书名:</p>
+					<input type="text" name="title"  value="{$title}"/>
+				</li>
+				<li>
+					<p>页码:</p>
+					<input type="text" name="pages"  value="{$pages}"/>
+				</li>
+				<li>
+					<p>分类号:</p>
+					<input type="text" name="classification_num"  value="{$classification_num}"/>
+				</li>
+				<li>
+					<p>作者:</p>
+					<input type="text" name="author"  value="{$author}"/>
+				</li>
+				<li>
+					<p>出版社:</p>
+					<input type="text" name="publisher"  value="{$publisher}"/>
+				</li>
+				<li>
+					<p>版次:</p>
+					<input type="text" name="edition"  value="{$edition}"/>
+				</li>
+				<li>
+					<p>出版地:</p>
+					<input type="text" name="pubplace"  value="{$pubplace}"/>
+				</li>
+				<li>
+					<p>标签:</p>
+					<input type="text" name="tags"  value="{$tags}"/>
+				</li>
+				<li>
+					<p>出版时间:</p>
+					<!--<input type="text" name="pubdate"/>-->
+					<input type="text" placeholder="请选择"  value="{$pubdate}" name="pubdate" class="laydate-icon" onClick="laydate({istime: true, format: 'YYYY-MM-DD'})">
+				</li>
+				<li>
+					<p>图书价格（分）:</p>
+					<input type="text" name="price"  value="{$price}"/>
+				</li>
+			</ul>
+			<div class="catalog_zy outer">
+				<p>内容摘要：</p>
+				<textarea name="abstracts">{$abstracts}</textarea>
+			</div>
+		</form>
+		<div class="catalog_btn outer">
+			<div class="catalog_sure" id="addCata">确定</div>
+			<div class="catalog_close close_btn" id="comeBack">返回</div>
+		</div>
+	</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(3)").addClass("on");
+			$(".main_right_top ul").children(":eq(3)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(3)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(0)").addClass("onup");
+
+			//返回
+			$('#comeBack').click(function(){
+				location.href = "{:U('Catalog/index')}";
+			});
+
+			//添加
+			$('#addCata').click(function(){
+				var form = $("form").serialize();//表单序列化
+				$.ajax({
+					type:'post',
+					url:"{:U('Catalog/edit')}",
+					data:form,
+					dataType:'json',
+					success:function(data){
+						if(data.code == 1){
+							var url = "{:U('Catalog/index')}";
+							return dialog.success('修改成功',url);
+						}else {
+							return dialog.error(data.message);
+						}
+					}
+				})
+			});
+
+		});
+	</script>
+</block>

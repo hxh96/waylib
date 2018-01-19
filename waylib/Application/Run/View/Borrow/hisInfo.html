@@ -1,0 +1,154 @@
+<extend name="Common/base" />
+<block name="menus">
+	{:W('Public/borrow_menus')}
+</block>
+<block name="content">
+	<div class="borrow_his outer">
+		<div class="borrow_icon">
+			<div class="borrow_head outer">
+				<img src="{$user.u_photo|default='__IMG__/mrtx.png'}" class="head_pic"/>
+				<if condition="$user.u_type eq 1">
+					<img src="__IMG__/znwtyh.png" class="waylib_user" />
+					<else/>
+					<img src="__IMG__/tsgyh.png" class="waylib_user" />
+				</if>
+				<img src="__IMG__/tsgyhyy.png" class="head_circle"/>
+			</div>
+			<div class="borrow_head_left">
+				<div class="user_info">
+					<ul>
+						<li>读者姓名:{$user.user_real_name}</li>
+						<li>联系电话:{$user.u_mobile}</li>
+						<li>读者证号:{$user.u_name}</li>
+					</ul>
+				</div>
+				<div class="borrow_status">
+					<ul class="outer">
+						<li>
+							<img src="__IMG__/yj.png" />
+						</li>
+						<li style="margin-left: 2%;margin-top: 1%;"><p>{$user[is_deposited]==1?'已交':'未交'}</p></li>
+						<li style="margin-left: 10%;"><img src="__IMG__/qk.png" /></li>
+						<li style="margin-left: 2%;margin-top: 1%;"><p>0.00￥</p></li>
+					</ul>
+				</div>
+			</div>
+			<div class="borrow_btn">
+				<a href="#">
+					<img src="__IMG__/yhjyan.png" />
+				</a>
+			</div>
+		</div>
+		<div class="his_icon outer">
+			<div class="his_icon_left">
+				<img src="{$book.cover_url|default='__IMG__/fm.png'}" />
+			</div>
+			<div class="his_icon_right">
+				<ul>
+					<li>书名:{$book.title}</li>
+					<li>图书条码:{$book.tiaoma}</li>
+					<li>ISBN:{$book.isbn}</li>
+					<li class="outer">
+						<img src="__IMG__/jy.png" />
+						<p>{$book.lend-time}</p>
+					</li>
+				</ul>
+			</div>
+			<div class="his_btn">
+				<a href="#">
+					<img src="__IMG__/tslsjyan.png" />
+				</a>
+			</div>
+		</div>
+		<div class="look_icon outer">
+			<div class="look_icon_left">
+				<img src="__IMG__/tb.png" />
+			</div>
+			<div class="look_icon_right">
+				<ul>
+					<li>借出图书馆:{$machine.library}</li>
+					<li>借出机器:{$machine.machine_name}</li>
+				</ul>
+			</div>
+			<div class="look_btn">
+				<a href="#">
+					<img src="__IMG__/jhjkan.png" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="hisinfo_title outer" style="margin-top: 3%;">
+		<p>图书历史借阅信息</p>
+		<input placeholder="请选择开始时间" id="startTime" value="{$start}" class="laydate-icon" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+		<p style="border-left: none;padding: 0px;margin-left: 10px;">--</p>
+		<input placeholder="请选择结束时间" id="endTime" value="{$end}" class="laydate-icon" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+		<div class="searchfor" >
+			<img src="__IMG__/search.png" id="searchBtn" attr-lId="{$lId}" attr-uId="{$uId}"/>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			//搜索
+			$('#searchBtn').click(function(){
+				var startTime = $('#startTime').val();//开始时间
+				var endTime = $('#endTime').val();//结束时间
+				var lId = $(this).attr('attr-lId');//lend_id
+				var uId = $(this).attr('attr-uId');//user_id
+				if(!startTime || !endTime){
+					return dialog.error('请先选择时间段');
+				}else {
+					location.href = "{:U('Borrow/hisInfo')}?lId="+lId+'&uId='+uId+'&start='+startTime+'&end='+endTime;
+				}
+			})
+		})
+	</script>
+	<div class="main_biaoge">
+		<table  class="table1 table-bordered table-striped table table4">
+			<tr>
+				<th>姓名</th>
+				<th>电话号码</th>
+				<th>读者证号</th>
+				<th>借出图书馆</th>
+				<th>借出机器</th>
+				<th>借出时间</th>
+				<th>图书条码</th>
+				<th>书名</th>
+				<th>ISBN</th>
+				<th>操作</th>
+			</tr>
+			<volist name="lists" id="v">
+				<tr>
+					<td>{$v.user_real_name}</td>
+					<td>{$v.u_mobile}</td>
+					<td>{$v.u_name}</td>
+					<td>{$v.library}</td>
+					<td>{$v.machine_name}</td>
+					<td>{$v.lend_created_time}</td>
+					<td>{$v.tiaoma}</td>
+					<td>{$v.title}</td>
+					<td>{$v.isbn}</td>
+					<td><a href="{:U('Borrow/hisInfo',['lId'=>$v[u_user_lend_id],'uId'=>$v[user_id]])}">查看</a></td>
+				</tr>
+			</volist>
+		</table>
+		<div class="reader_more">
+			<div class="pagelist">
+				{$page}
+			</div>
+		</div>
+	</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(1)").addClass("on");
+			$(".main_right_top ul").children(":eq(1)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(1)").find("a").find(".icon1").hide();
+
+			$(".main_left_ul ul").children(":eq(1)").addClass("onup");
+
+		})
+	</script>
+</block>
+
+

@@ -1,0 +1,56 @@
+<extend name="Common/base" />
+<block name="menus">
+	{:W('Public/library_menus')}
+</block>
+<block name="content">
+	<div class="choose">
+		<div class="kind outer">
+			<div class="back_mach">
+				<a href="{:U('Library/mach',['libId'=>$libId])}">
+					<img src="__IMG__/fhjqlb.png" />
+				</a>
+			</div>
+
+		</div>
+	</div>
+	<div class="main_biaoge">
+		<table  class="table1 table-bordered table-striped table">
+				<tr>
+					<th>图书馆名称</th>
+					<th>机器</th>
+					<th>格子号</th>
+					<th>图书条码</th>
+					<th>ISBN</th>
+					<th>书名</th>
+					<th>作者</th>
+				</tr>
+			<volist name="lists" id="v">
+				<tr>
+					<td>{$v.library}</td>
+					<td>{$machName}</td>
+					<td>{$v.mach_lat_num}</td>
+					<td>{$v.tiaoma}</td>
+					<td>{$v.isbn}</td>
+					<td>{$v.title}</td>
+					<td class="outer">{$v.author}</td>
+				</tr>
+			</volist>
+			</table>
+		<div class="reader_more">
+			<div class="pagelist">
+				{$page}
+			</div>
+		</div>
+	</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(7)").addClass("on");
+			$(".main_right_top ul").children(":eq(7)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(7)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(0)").addClass("onup");
+
+		})
+	</script>
+</block>

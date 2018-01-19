@@ -1,0 +1,332 @@
+﻿@charset "utf-8";
+.mask{margin:0;padding:0;border:none;width:100%;height:100%;background:#333;opacity:0.6;filter:alpha(opacity=60);z-index:9999;position:fixed;top:0;left:0;display:none;}
+#LoginBox{
+			position: absolute;
+			left: 27.3%;
+			top: 23.8%;
+			width:45.4%;
+			height:52.4%;
+			z-index:10000;
+			display:none;
+			background:url(../img/bj.png) no-repeat center center;
+			background-size: 100% 100%;
+			
+			margin-left: auto; 
+ 			margin-right: auto; 
+		}
+.new_left,.new_right{float: left;}
+.new_name p,.new_name input{float: left;margin-top: 2%;}
+.new_sex p,.new_sex input{float: left;margin-top: 2%;}
+.new_lib p,.new_lib input{float: left;margin-top: 2%;}
+.new_phone p,.new_phone input{float: left;margin-top: 2%;}
+.new_name{margin-top: 46%;}
+.new_left{margin-left: 8%;}
+.new_left input{
+	border: none;
+	border-bottom: 1px solid #CCCCCC;
+	border-radius: 0;	
+	outline: none;
+}
+.new_left input:focus {  
+    outline: none;  
+    box-shadow: none;  
+    border-radius: 0;  
+    border-color: #CCCCCC;
+}
+.new_left input[type="text"]{
+	-webkit-box-shadow: none;
+}
+.new_left p{
+	font-size: 16px;
+	font-weight: bolder;
+}
+.new_name input{
+	width: 54%;
+}
+.new_phone input{
+	width: 48%;
+}
+.new_lib input{
+	width: 44%;
+}
+.new_left{
+	width: 50%;
+}
+.new_right{width: 40%;}
+.set_txt{
+	border-bottom: 2px solid #f2c700;
+	font-weight: bolder;
+	/*margin: auto;*/
+	font-size: 16px;
+	width: 29%;
+	margin-left: 30%;
+	text-align: center;
+}
+.new_right{
+	margin-top: 23%;
+}
+.psw_inp{position: relative;margin-top: 10%;}
+.psw_inp img{position: absolute;left: 0 ;top:0;}
+.psw_inp input{
+	border: none;
+	border-bottom: 1px solid #CCCCCC;
+	border-radius: 0;	
+	outline: none;
+	padding-left: 16%;
+	width: 69%;
+}
+.psw_inp input:focus {  
+    outline: none;  
+    box-shadow: none;  
+    border-radius: 0;  
+    border-color: #CCCCCC;
+}
+.psw_inp input[type="password"]{
+	-webkit-box-shadow: none;
+}
+.more_sure,.more_qiyong{
+	width:86%;
+	height: 40%;
+}
+.more_sure{margin-top: 4%;}
+.more_sure img,.more_qiyong img{width: 100%;height: 100%;}
+.more_qiyong{margin-top: 10%;}
+/*#LoginBox{position: relative;}*/
+#closeBtn{position: absolute;right: -9%;top: 9%;}
+.qiyong input,.qiyong p{
+	float: left;
+}
+.qiyong{margin-top: 10%;}
+
+/*查看弹框*/
+#LoginBox1{
+			position: absolute;
+			left: 27.3%;
+			top: 23.8%;
+			width:45.4%;
+			height:52.4%;
+			z-index:10000;
+			display:none;
+			background:url(../img/di1.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+.example1{cursor: pointer;}
+.check_head{width: 13.6%;height: 23.2%;border-radius: 100%;margin: auto;background: url(../img/tsgyhy.png) no-repeat center center;background-size: 100% 100%;margin-top: 4%;}
+.check_head img{width: 100%;height: 100%;border-radius: 100%;}
+.check_left,.check_right{float: left;}
+.check_left{width: 50%;margin-left: 8%;font-weight: bolder;line-height: 30px;margin-top: 6%;}
+.last_time span{color: #f24a42;padding-right: 2%;}
+.last_time{margin-left: -4%;margin-top: 10%;}
+.check_ul ul li{float: left;width: 32%;margin-right: 16%;margin-top: 20%;}
+.check_ul ul li img{width: 66%;height: 82%;}
+.check_ul ul li a{color: black;text-decoration: none;}
+.check_ul ul li a p{margin-top: 6%;font-weight: bolder;}
+.check_right{width: 40%;}
+
+.set_psw{position: relative;margin-top: 10%;}
+.set_password{position: absolute;left: 0;top: 8%;font-weight: bolder;}
+.set_psw input{border: none;border-bottom: 1px solid #CCCCCC;border-radius: 0;outline: none;padding-left: 20%;width: 60%;}
+
+.set_psw input[type="password"]{
+	-webkit-box-shadow: none;
+}
+.change_btn a{
+	position: absolute;right: 22%;top: 0;display: block;width: 16%;height: 70%;background: #204780;color: white;
+	text-align: center;border-radius: 30px;line-height: 100%;font-weight:bolder;padding-top: 2%;box-sizing: border-box;text-decoration: none;
+}
+.set_psw input:focus {  
+    outline: none;  
+    box-shadow: none;  
+    border-radius: 0;  
+    border-color: #CCCCCC;
+}
+.table3 td:nth-child(8){color:#ea7873;cursor: pointer;}
+.table4 td:nth-child(10) a{color:#ea7873;cursor: pointer;}
+.super_right a{text-decoration: none;color: #d54540;}
+/*修改排序弹框*/
+
+#LoginBox2{
+			position: absolute;
+			left: 40.3%;
+			top: 23.8%;
+			width:26.1%;
+			height:39.4%;
+			z-index:10000;
+			display:none;
+			background:url(../img/di.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+#LoginBox3{
+			position: absolute;
+			left: 40.3%;
+			top: 23.8%;
+			width:25.8%;
+			height:45.7%;
+			z-index:10000;
+			display:none;
+			background:url(../img/tjztd.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+#LoginBox4{
+			position: absolute;
+			left: 40.3%;
+			top: 23.8%;
+			width:25.8%;
+			height:45.7%;
+			z-index:10000;
+			display:none;
+			background:url(../img/tjztd.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+#LoginBox5{
+			position: absolute;
+			left: 26.3%;
+			top: 13.8%;
+			width:48.6%;
+			height:62.7%;
+			z-index:10000;
+			display:none;
+			background:url(../img/tjtsd.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+#LoginBox6{
+			position: absolute;
+			left: 26.3%;
+			top: 13.8%;
+			width:48.6%;
+			height:62.7%;
+			z-index:10000;
+			display:none;
+			background:url(../img/bjsmd.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+#LoginBox7{
+			position: absolute;
+			left: 26.3%;
+			top: 13.8%;
+			width:48.6%;
+			height:62.7%;
+			z-index:10000;
+			display:none;
+			background:url(../img/xzsmd.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+#LoginBox8{
+			position: absolute;
+			left: 26.3%;
+			top: 13.8%;
+			width:48.6%;
+			height:62.7%;
+			z-index:10000;
+			display:none;
+			background:url(../img/zjcs.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+
+#LoginBox9{
+			position: absolute;
+			left: 26.3%;
+			top: 13.8%;
+			width:48.6%;
+			height:62.7%;
+			z-index:10000;
+			display:none;
+			background:url(../img/dygl.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+#LoginBox10{
+			position: absolute;
+			left: 40.3%;
+			top: 23.8%;
+			width:25.9%;
+			height:45.7%;
+			z-index:10000;
+			display:none;
+			background:url(../img/bjts.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+#LoginBox11{
+			position: absolute;
+			left: 40.3%;
+			top: 23.8%;
+			width:25.9%;
+			height:45.7%;
+			z-index:10000;
+			display:none;
+			background:url(../img/xztsgg.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+#LoginBox12{
+			position: absolute;
+			left: 40.3%;
+			top: 23.8%;
+			width:25.9%;
+			height:45.7%;
+			z-index:10000;
+			display:none;
+			background:url(../img/xzapid.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+#LoginBox13{
+			position: absolute;
+			left: 40.3%;
+			top: 23.8%;
+			width:25.9%;
+			height:45.7%;
+			z-index:10000;
+			display:none;
+			background:url(../img/bjapid.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+#LoginBox14{
+			position: absolute;
+			left: 26.3%;
+			top: 13.8%;
+			width:48.6%;
+			height:62.7%;
+			z-index:10000;
+			display:none;
+			background:url(../img/bjjq.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}
+#LoginBox15{
+			position: absolute;
+			left: 26.3%;
+			top: 13.8%;
+			width:48.6%;
+			height:62.7%;
+			z-index:10000;
+			display:none;
+			background:url(../img/xzjq.png) no-repeat center center;
+			background-size: 100% 100%;	
+			margin-left: auto; 
+ 			margin-right: auto; 
+}

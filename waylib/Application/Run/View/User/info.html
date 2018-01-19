@@ -1,0 +1,121 @@
+<extend name="Common/base" />
+<block name="menus">
+	{:W('Public/user_menus')}
+</block>
+<block name="content">
+					<div class="info">
+						<div class="info_left">
+							<div class="info_left_top">
+								<img src="__IMG__/tsgyhyy.png" class="circle"/>
+								<div class="top_head">
+									<img src="{$u_photo|default='__IMG__/mrtx.png'}"/>
+								</div>
+								<if condition="$u_type eq 1">
+									<img src="__IMG__/znwtyh.png" class="shibie"/>
+									<else/>
+									<img src="__IMG__/tsgyh.png" class="shibie"/>
+								</if>
+							</div>
+							<div class="reader_information outer">
+								<div class="reader_name">{$user_real_name}</div>
+								<div class="sex">{$gender==1?'男':'女'}</div>
+							</div>
+							<div class="status">
+								<ul class="outer">
+									<li>
+										<img src="__IMG__/yj.png" />
+									</li>
+									<li class="money_status">{$is_deposited==1?'已交':'未交'}</li>
+									<li class="qian">
+										<img src="__IMG__/qk.png" />
+									</li>
+									<li class="qian_money">0.00￥</li>
+								</ul>
+							</div>
+							<div class="xiugai_btn">
+								<a href="#">修改状态</a>
+							</div>
+						</div>
+						<div class="info_right">
+							<ul class="outer info_right_top">
+								<li>用户名：{$nick_name}</li>
+								<li>图书馆：{$library}</li>
+								<li>联系电话：{$u_mobile}</li>
+								<li>读者证号：{$u_name}</li>
+							</ul>
+							<ul class="outer info_right_bottom">
+								<li>
+									<a href="{:U('User/info',['uId'=>$user_id,'ac'=>'dqjy'])}">
+										<img src="__IMG__/dqje.png" />
+										<p>当前借阅</p>
+									</a>
+								</li>
+								<li>
+									<a href="{:U('User/info',['uId'=>$user_id,'ac'=>'lsjy'])}">
+										<img src="__IMG__/lsjl.png" />
+										<p>历史借阅</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="__IMG__/now.png" />
+										<p>当前订阅</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="__IMG__/wgjl.png" />
+										<p>违规记录</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="main_biaoge">
+						<table  class="table table-bordered table-striped table2">
+								<tr>
+									<th>姓名</th>
+									<th>电话号码</th>
+									<th>读者证号</th>
+									<th>借出图书馆</th>
+									<th>借出机器</th>
+									<th>借出时间</th>
+									<th>图书条码</th>
+									<th>书名</th>
+									<th>ISBN号</th>
+									<th>操作</th>
+								</tr>
+							<volist name="lists" id="v">
+								<tr>
+									<td>{$user_real_name}</td>
+									<td>{$u_mobile}</td>
+									<td>{$u_name}</td>
+									<td>{$v.library}</td>
+									<td>{$v.machine}</td>
+									<td>{$v.created_time}</td>
+									<td>{$v.tiaoma}</td>
+									<td>{$v.title}</td>
+									<td>{$v.isbn}</td>
+									<td>查看</td>
+								</tr>
+							</volist>
+							</table>
+						<div class="reader_more">
+							<div class="pagelist">
+								{$page}
+							</div>
+						</div>
+					</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":first").addClass("on");
+			$(".main_right_top ul").children(":first").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":first").find("a").find(".icon1").hide();
+
+			$(".main_left_ul ul").children(":eq(0)").addClass("onup");
+
+		})
+	</script>
+</block>

@@ -1,0 +1,138 @@
+<extend name="Common/base" />
+<block name="menus">
+	{:W('Public/subscribe_menus')}
+</block>
+<block name="content">
+	<div class="choose">
+		<div class="kind">
+			<form class="outer">
+				<div class="choose8">
+					<select id="type">
+						<option value="u_mobile" {$u_type=='u_mobile'?'selected':''}>手机号:</option>
+						<option value="u_name" {$u_type=='u_name'?'selected':''}>读者证号:</option>
+					</select>
+					<input type="text" class="input-medium" id="content" value="{$content}"/>
+				</div>
+				<div class="choose5 outer">
+					<p>状态</p>
+					<select id="bes_status">
+						<option value="">请选择</option>
+						<volist name="bes_status" id="v">
+							<option value="{$v.id}">{$v.name}</option>
+						</volist>
+					</select>
+				</div>
+
+				<div class="choose_time outer">
+					<input placeholder="请选择开始时间" id="start" value="{$start}" class="laydate-icon" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+					<p>--</p>
+					<input placeholder="请选择结束时间" id="end" value="{$end}" class="laydate-icon" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+				</div>
+				<div class="search">
+					<img src="__IMG__/search.png" id="searchBtn"/>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			//搜索
+			$('#searchBtn').click(function(){
+				var type = $('#type option:selected').val();//搜索类型
+				var content = $('#content').val();//搜索内容
+				var bes_status = $('#bes_status option:selected').val();//搜索状态
+				var start = $('#start').val();//开始时间
+				var end = $('#end').val();//开始时间
+				//判断
+				if(content || bes_status || (start && end)){
+					location.href = "{:U('Subscribe/index')}?ty="+type+'&co='+content+'&bS='+bes_status+'&st='+start+'&end='+end;
+				}else {
+					return dialog.error('请先选择搜索方式');
+				}
+
+			})
+		})
+	</script>
+	<div class="main_biaoge">
+		<table  class="table1 table-bordered table-striped table table12">
+				<tr>
+					<th>图书馆</th>
+					<th>图书名称</th>
+					<th>作者</th>
+					<th>出版社</th>
+					<th>ISBN</th>
+					<th>状态</th>
+					<th>订阅用户</th>
+					<th>订阅时间</th>
+					<th>是否已通知</th>
+					<!--<th>操作</th>-->
+				</tr>
+				<volist name="lists" id="v">
+					<tr>
+						<td>{$v.library}</td>
+						<td>{$v.title}</td>
+						<td>{$v.author}</td>
+						<td>{$v.publisher}</td>
+						<td>{$v.isbn}</td>
+						<td>
+							<select class="b_status" attr-id="{$v.id}" attr-uId="{$v.user_id}">
+								<volist name="bes_status" id="y">
+									<option value="{$y.id}" {$v[status]==$y[id]?'selected':''}>{$y.name}</option>
+								</volist>
+							</select>
+						</td>
+						<td>{$v.u_mobile|default=$v.u_name}</td>
+						<td>{$v.create_time}</td>
+						<td>{$v[is_notice]==2?'已通知':'未通知'}</td>
+						<!--<td>查看</td>-->
+					</tr>
+				</volist>
+			</table>
+		<div class="reader_more">
+			<div class="pagelist">
+				{$page}
+			</div>
+		</div>
+	</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(4)").addClass("on");
+			$(".main_right_top ul").children(":eq(4)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(4)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(0)").addClass("onup");
+
+			$(".b_status").change(function(){
+				var This = $(this);
+				var status = This.val();
+				var id = This.attr('attr-id');
+				var uId = This.attr('attr-uId');
+				var url = "{:U('Subscribe/checkStatus')}";
+				layer.open({
+					content: '确认执行该操作?',
+					icon: 3,
+					btn: ['是', '否'],
+					yes: function () {
+						$.ajax({
+							type:'get',
+							url:url,
+							data:'id='+id+'&status='+status+'&uId='+uId,
+							dataType:'json',
+							success:function(data){
+								if(data.code == 1){
+									return dialog.success('更改成功',"{:U('Subscribe/index')}");
+								}else {
+									return dialog.error(data.message);
+								}
+							}
+						});
+					},
+					btn2:function(){
+						location.reload(true);
+					}
+				});
+			})
+		})
+	</script>
+</block>

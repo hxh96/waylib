@@ -1,0 +1,262 @@
+<extend name="Common/base" />
+<block name="model">
+	<!--增加藏书开始-->
+	<div id="LoginBox8" class="outer">
+		<div class="addbook_list">
+			<ul class="outer">
+				<li><p>ISBN:</p>212-123-123-12211</li>
+				<li><p>尺寸：</p>6开</li>
+				<li><p>页码：</p>123</li>
+				<li><p>书名：</p>书名书名书名书名书名书名</li>
+				<li><p>作者：</p>名字名字名字名字</li>
+				<li><p>版次：</p>333</li>
+				<li><p>分类号：</p>k122</li>
+				<li><p>标签：</p>格林童话</li>
+				<li><p>图书价格（元）：</p>00：00</li>
+				<li><p>出版社：</p>人民邮电出版社</li>
+				<li><p>出版地：</p>中国中国中国</li>
+				<li><p>出版时间：</p>2019-10-10</li>
+				<li><p>内容摘要：</p>一群可爱的</li>
+			</ul>
+			<div class="lib_info outer">
+				<div class="neirong_z">
+					<p>内容摘要：</p>
+					<input type="text" />
+				</div>
+				<div class="lib_z">
+					<p>图书馆：</p>
+					<input type="text" />
+				</div>
+			</div>
+			<div class="catalog_btn outer">
+				<div class="catalog_sure">确定</div>
+				<div class="catalog_close close_btn">取消</div>
+			</div>
+		</div>
+	</div>
+	<!--增加藏书结束-->
+</block>
+<block name="menus">
+	{:W('Public/catalog_menus')}
+</block>
+<block name="content">
+	<if condition="($status eq 1)">
+		<div class="choose">
+			<div class="kind">
+				<form class="outer">
+					<div class="choose2 outer">
+						<p>题名</p>
+						<input type="text" class="input-medium" id="title"/>
+					</div>
+					<div class="choose2 outer">
+						<p>ISBN号</p>
+						<input type="text" class="input-medium" id="isbn"/>
+					</div>
+					<div class="search">
+						<img src="__IMG__/search.png" id="searchBtn"/>
+					</div>
+				</form>
+				<div class="more_warden example7">
+					<a href="{:U('Catalog/addCata')}"><img src="__IMG__/xzts.png" /></a>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				//搜索
+				$('#searchBtn').click(function(){
+					var title = $('#title').val();//题名
+					var isbn = $('#isbn').val();//isbn号
+					if(!title && !isbn){
+						return dialog.error('请先输入相关内容');
+					}else {
+						if(title && isbn){
+							location.href = "{:U('Catalog/index')}?ti="+title+'&is='+isbn+'&ty=all';
+						}
+						if(!title){
+							location.href = "{:U('Catalog/index')}?is="+isbn+'&ty=isbn';
+						}else {
+							location.href = "{:U('Catalog/index')}?ti="+title+'&ty=title';
+						}
+					}
+
+				});
+			});
+		</script>
+		<else/>
+	</if>
+	<div class="main_biaoge">
+		<table  class="table1 table-bordered table-striped table table10">
+			<tr>
+				<th>题名</th>
+				<th>ISBN号</th>
+				<th>分类号</th>
+				<th>出版社</th>
+				<th>出版日期</th>
+				<th>价格（元）</th>
+				<th>藏书（部）</th>
+				<th>操作</th>
+			</tr>
+			<if condition="($status eq 1)">
+				<volist name="lists" id="v">
+					<tr>
+						<td>{$v.title}</td>
+						<td>{$v.isbn}</td>
+						<td>{$v.classification_num}</td>
+						<td>{$v.publisher}</td>
+						<td>{$v.pubdate}</td>
+						<td>{$v.price}</td>
+						<td class="outer">
+							<p>{$v.count}</p>
+							<img src="__IMG__/ckan.png" class="collectBookBtn" attr-descId="{$v.book_desc_id}"/>
+						</td>
+						<td class="outer">
+							<p class="example6"><a href="{:U('Catalog/editCata',['id'=>$v[book_desc_id]])}">编辑</a></p>
+							<img src="__IMG__/fg.png" />
+							<p class="example8"><a href="#">增加藏书</a></p>
+						</td>
+					</tr>
+				</volist>
+
+				<else/>
+				<tr>
+					<td colspan="8">您没有此权限</td>
+				</tr>
+			</if>
+		</table>
+		<div class="reader_more">
+			<div class="pagelist">
+				{$page}
+			</div>
+		</div>
+		<div id="collectBook">
+
+		</div>
+	</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(3)").addClass("on");
+			$(".main_right_top ul").children(":eq(3)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(3)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(0)").addClass("onup");
+
+
+			//查看藏书
+			$('.collectBookBtn').click(function(){
+				var descId = $(this).attr('attr-descId');//详情ID
+				//获取藏书列表
+				$.ajax({
+					type:'get',
+					url:"{:U('Catalog/collectBook')}",
+					data:'descId='+descId,
+					dataType:'json',
+					success:function(data){
+//						console.log(data);
+						if(data.code == 1){
+							var html = '<table  class="table1 table-bordered table-striped table table18">\
+									<tr>\
+									<th>题名</th>\
+									<th>ISBN号</th>\
+									<th>分类号</th>\
+									<th>出版社</th>\
+									<th>出版日期</th>\
+									<th>价格（分）</th>\
+							<th>图书条码</th>\
+							<th>操作</th>\
+						</tr>';
+							for(var i=0;i<data.data.length;i++){
+								html += '<tr>\
+										<td>'+data.data[i]['title']+'</td>\
+										<td>'+data.data[i]['isbn']+'</td>\
+										<td>'+data.data[i]['classification_num']+'</td>\
+										<td>'+data.data[i]['publisher']+'</td>\
+										<td>'+data.data[i]['pubdate']+'</td>\
+										<td>'+data.data[i]['price']+'</td>\
+										<td class="outer">\
+										<p class="isbn">'+data.data[i]['tiaoma']+'</p>\
+										<div class="bianji_txt">\
+											<input type="text"/>\
+										</div>\
+										<img src="'+getRoot()+'/Public/Run/img/xg.png" class="bianji_pic" attr-libId="'+data.data[i]['library_id']+'"  attr-bookId="'+data.data[i]['book_id']+'"/>\
+										</td>\
+										<td class="outer">\
+											<p><a href="javaScript:;" class="delBook" attr-bookId="'+data.data[i]['book_id']+'">删除</a></p>\
+											</td>\
+											</tr>';
+							}
+									html +='</table>';
+
+							$('#collectBook').html(html);
+
+							//修改图书条码
+							$(".bianji_pic").click(function(){
+								var td = $(this).prev().prev();
+								var input = $(this).prev();
+								input.show();//文本框
+								td.hide();//td框
+								var tiaoma = td.text();//获取图书条码
+								input.find("input").val(tiaoma);//将条码复制给文本框
+								var bookId = $(this).attr('attr-bookId');//bookID
+								var libId = $(this).attr('attr-libId');//libId
+								//光标失焦事件
+								input.find("input").blur(function(){
+									var newTiaoma = $(this).val();
+									//修改条码
+									$.ajax({
+										type:'get',
+										url:"{:U('Catalog/editTiaoma')}",
+										data:'tiaoma='+newTiaoma+'&bookId='+bookId+'&libId='+libId,
+										dataType:'json',
+										success:function(data){
+											console.log(data);
+											if(data.code == 1){
+												td.html(newTiaoma);//给TD赋值
+												input.hide();//文本框
+												td.show();//td框
+												return dialog.toconfirm('修改成功');
+											}else {
+												return dialog.error(data.message);
+											}
+										}
+									});
+								});
+
+							});
+
+							//删除
+							$('.delBook').click(function(){
+								//书籍ID
+								var bookId = $(this).attr('attr-bookId');
+								layer.open({
+									content: '确认删除?',
+									icon: 3,
+									btn: ['是', '否'],
+									yes: function () {
+										//删除
+										$.ajax({
+											type:'get',
+											url:"{:U('Catalog/delBook')}",
+											data:'bookId='+bookId,
+											dataType:'json',
+											success:function(data){
+												if(data.code == 1){
+													return dialog.toconfirm('删除成功');
+												}else {
+													return dialog.error(data.message);
+												}
+											}
+										});
+									}
+								});
+							});
+						}else {
+							return dialog.error(data.message);
+						}
+					}
+				});
+			});
+		})
+	</script>
+</block>

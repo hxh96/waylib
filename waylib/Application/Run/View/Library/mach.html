@@ -1,0 +1,184 @@
+<extend name="Common/base" />
+<block name="model">
+	<!--编辑机器开始-->
+	<div id="LoginBox14">
+		<div class="mach_list" id="editMach">
+
+		</div>
+	</div>
+	<!--编辑机器结束-->
+	<!--新增机器开始-->
+	<div id="LoginBox15">
+		<div class="mach_list">
+			<form id="add">
+				<ul class="outer">
+					<input type="hidden" name="library_id" id="libId" value="{$libId}">
+					<li class="lib">
+						<p>图书馆：</p>
+						<span>{$libName}</span>
+					</li>
+					<li>
+						<p>机器ID：</p>
+						<input type="text" name="machine_id"/>
+					</li>
+					<li>
+						<p>地址：</p>
+						<input type="text" name="machine_addr"/>
+					</li>
+					<li>
+						<p>机器名称：</p>
+						<input type="text" name="machine_name"/>
+					</li>
+					<li>
+						<p>状态：</p>
+						<select name="machine_state">
+							<option value="1">正常</option>
+							<option value="0">停用</option>
+						</select>
+					</li>
+					<li>
+						<p>经度：</p>
+						<input type="text" name="gps_latitude"/>
+					</li>
+					<li>
+						<p>类型：</p>
+						<select name="machine_type">
+							<option value="1">智能微图</option>
+							<option value="2">图书馆</option>
+						</select>
+					</li>
+					<li>
+						<p>纬度：</p>
+						<input type="text" name="gps_longitude"/>
+					</li>
+				</ul>
+			</form>
+			<div class="catalog_btn outer">
+				<div class="catalog_sure" id="addMach">确定</div>
+				<div class="catalog_close close_btn">取消</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			//添加
+			$('#addMach').click(function(){
+				var data = $('#add').serialize();
+				var libId = $('#libId').val();
+				$.ajax({
+					type:'post',
+					url:"{:U('Library/addMach')}",
+					data:data,
+					dataType:'json',
+					success:function(data){
+						if(data.code == 1){
+							var url = "{:U('Library/mach')}?libId="+libId;
+							return dialog.success('添加成功',url);
+						}else {
+							return dialog.error(data.message);
+						}
+					}
+				});
+			});
+		})
+	</script>
+	<!--新增机器器结束-->
+</block>
+<block name="menus">
+	{:W('Public/library_menus')}
+</block>
+<block name="content">
+	<div class="choose">
+		<div class="kind outer">
+			<div class="back_mach">
+				<a href="{:U('Library/index')}">
+					<img src="__IMG__/fhtslb.png" />
+				</a>
+			</div>
+			<div class="add_mach">
+				<a href="#" class="example15">
+					<img src="__IMG__/fhtjlb.png" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="main_biaoge">
+		<table  class="table1 table-bordered table-striped table table14">
+			<tr>
+				<th>机器ID</th>
+				<th>机器名称</th>
+				<th>经度</th>
+				<th>纬度</th>
+				<th>地址</th>
+				<th>状态</th>
+				<th>类型</th>
+				<th>查看在架图书</th>
+				<th>所属图书馆</th>
+				<th>操作</th>
+			</tr>
+			<volist name="lists" id="v">
+				<tr>
+					<td>{$v.machine_id}</td>
+					<td>{$v.machine_name}</td>
+					<td>{$v.gps_latitude}</td>
+					<td>{$v.gps_longitude}</td>
+					<td>{$v.machine_addr}</td>
+					<td>{$v[machine_state]==1?'正常':'停用'}</td>
+					<td>{$v[machine_type]==1?'图书馆':'智能微图'}</td>
+					<td>
+						<a href="{:U('Library/showBook',['libId'=>$v[library_id],'machId'=>$v[machine_id]])}">
+							<img src="__IMG__/zjts.png" />
+						</a>
+					</td>
+					<td>{$v.library}</td>
+					<td class="outer">
+						<a href="#" class="lib_bianji example14" attr-machId="{$v.machine_id}">编辑</a>
+						<a href="javaScript:;" attr-id="{$v.machine_id}" attr-libId="{$v.library_id}" class="del">删除</a>
+					</td>
+				</tr>
+			</volist>
+		</table>
+		<div class="reader_more">
+			<div class="pagelist">
+				{$page}
+			</div>
+		</div>
+	</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(7)").addClass("on");
+			$(".main_right_top ul").children(":eq(7)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(7)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(0)").addClass("onup");
+
+			//删除
+			$('.del').click(function(){
+				var id = $(this).attr('attr-id');//机器ID
+				var libId = $(this).attr('attr-libId');//图书馆ID
+				layer.open({
+					content: '确认删除?',
+					icon: 3,
+					btn: ['是', '否'],
+					yes: function () {
+						$.ajax({
+							type:'get',
+							url:"{:U('Library/delMach')}",
+							data:'id='+id,
+							dataType:'json',
+							success:function(data){
+								if(data.code == 1){
+									var url = "{:U('Library/mach')}?libId="+libId;
+									return dialog.success('删除成功',url);
+								}else {
+									return dialog.error(data.message);
+								}
+							}
+						});
+					}
+				})
+			});
+		})
+	</script>
+</block>

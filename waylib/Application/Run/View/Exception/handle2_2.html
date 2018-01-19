@@ -1,0 +1,115 @@
+<extend name="Common/base" />
+<block name="style">
+	<link rel="stylesheet" href="__CSS__/swiper-3.4.1.min.css" />
+	<script type="text/javascript" src="__JS__/swiper-3.4.1.jquery.min.js" ></script>
+</block>
+<block name="menus">
+	{:W('Public/exception_menus')}
+</block>
+<block name="content">
+					<div class="hand_top">
+						{:W('Public/exception_lists')}
+						<div class="shadow_tiao">
+							<img src="__IMG__/tiao1.png" />
+						</div>
+						<div class="success_check">
+							<div class="success_title4">
+								<img src="__IMG__/humuxinxiyouwu2.png" />
+							</div>
+							<div class="success_pro">
+								<img src="__IMG__/shumuxinxiyouwu12.png" />
+							</div>
+							<div class="main_biaoge">
+								<table  class="table1 table-bordered table-striped table table20">
+										<tr>
+											<th>姓名</th>
+											<th>电话号码</th>
+											<th>读者证号</th>
+											<th>借出图书馆</th>
+											<th>借出机器</th>
+											<th>借出时间</th>
+											<th>图书条码</th>
+											<th>书名</th>
+											<th>ISBN号</th>
+											<th>状态</th>
+											<th>操作</th>
+										</tr>
+										<volist name="lists" id="v">
+											<tr>
+												<td>{$v.user_real_name}</td>
+												<td>{$v.u_mobile}</td>
+												<td>{$v.u_name}</td>
+												<td>{$v.library}</td>
+												<td>{$v.machine_name}</td>
+												<td>{$v.lend_created_time}</td>
+												<td>{$v.tiaoma}</td>
+												<td>{$v.title}</td>
+												<td>{$v.isbn}</td>
+												<td>{$v[is_back]==1?'在借':'已还'}</td>
+												<td><a href="javaScript:;" class="del"attr-co="{$co}" attr-id="{$v.u_user_lend_id}" attr-lId="{$v.library_id}" >清除记录</a></td>
+											</tr>
+										</volist>
+								</table>
+								<div class="reader_more">
+									<div class="pagelist">
+										{$page}
+									</div>
+								</div>
+							</div>
+							<div class="caozuo">
+								<!--<a href="#">清除记录</a>-->
+							</div>
+							<div class="pagecircle pagecircle2 outer">
+								<div class="before_step"><a href="{:U('Exception/handle2_1')}">上一步</a></div>
+								<ul class="outer">
+									<li></li>
+									<li class="pagefan2"></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			//清除记录
+			$('.del').click(function(){
+				var id = $(this).attr('attr-id');//借阅ID
+				var lId = $(this).attr('attr-lId');//图书馆ID
+				var co = $(this).attr('attr-co');//搜索内容
+				layer.open({
+					content: '您确定要清除该记录?',
+					icon: 3,
+					btn: ['是', '否'],
+					yes: function () {
+						$.ajax({
+							type:'get',
+							url:"{:U('Exception/handle2Del')}",
+							data:'lendId='+id,
+							dataType:'json',
+							success:function(data){
+								if(data.code ==1){
+									var url = "{:U('Exception/handle2_3')}?co="+co+'&lId='+lId;
+									return dialog.success('清除成功',url);
+								}else {
+									return dialog.error(data.message);
+								}
+							}
+						})
+					}
+				});
+			});
+
+			$(".main_right_top ul").children(":eq(6)").addClass("on");
+			$(".main_right_top ul").children(":eq(6)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(6)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(0)").addClass("onup");
+			$(".swiper-wrapper").children(":eq(1)").addClass("handleon");
+
+
+
+		})
+	</script>
+</block>

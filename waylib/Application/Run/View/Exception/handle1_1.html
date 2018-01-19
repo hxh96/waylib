@@ -1,0 +1,75 @@
+<extend name="Common/base" />
+<block name="style">
+	<link rel="stylesheet" href="__CSS__/swiper-3.4.1.min.css" />
+	<script type="text/javascript" src="__JS__/swiper-3.4.1.jquery.min.js" ></script>
+</block>
+<block name="menus">
+	{:W('Public/exception_menus')}
+</block>
+<block name="content">
+					<div class="hand_top">
+						{:W('Public/exception_lists')}
+						<div class="shadow_tiao">
+							<img src="__IMG__/tiao1.png" />
+						</div>
+						<div class="success_check">
+							<div class="success_title">
+								<img src="__IMG__/chaxunyonghu1.png" />
+							</div>
+							<div class="success_search outer">
+								<input type="text" placeholder="输入读者证号或手机号" id="content"/>
+								<button id="searchBtn">查看借阅记录</button>
+							</div>
+							<div class="pagecircle">
+								<ul class="outer">
+									<li class="pagefan"></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+
+			//搜索
+			$('#searchBtn').click(function(){
+				var content = $('#content').val();
+				if(!content){
+					return dialog.error('请先输入内容');
+				}else {
+					$.ajax({
+						type:'get',
+						url:"{:U('Exception/handle1Check')}",
+						data:'co='+content,
+						dataType:'json',
+						success:function(data){
+//							console.log(data);
+							if(data.code == 1){
+								location.href = "{:U('Exception/handle1_2')}?co="+content;
+							}else {
+								return dialog.error('该账号不存在借阅记录');
+							}
+						}
+					});
+				}
+			});
+
+
+
+
+
+			$(".main_right_top ul").children(":eq(6)").addClass("on");
+			$(".main_right_top ul").children(":eq(6)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(6)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(0)").addClass("onup");
+			$(".swiper-wrapper").children(":eq(0)").addClass("handleon");
+
+
+		})
+	</script>
+</block>
+

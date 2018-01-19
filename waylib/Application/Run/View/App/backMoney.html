@@ -1,0 +1,107 @@
+<extend name="Common/base" />
+<block name="content">
+    <div class="main_biaoge">
+        <table  class="table1 table-bordered table-striped table table5 ">
+            <tr>
+                <th>姓名</th>
+                <th>电话号码</th>
+                <th>用户名</th>
+                <th>图书馆</th>
+                <th>读者类型</th>
+                <th>性别</th>
+                <th>退押金审核状态</th>
+                <th>是否欠款</th>
+                <th>注册时间</th>
+                <th>最后一次登录时间</th>
+                <th>审核</th>
+            </tr>
+            <if condition="($status eq 1)">
+                <volist name="lists" id="v">
+                    <tr>
+                        <td>{$v.user_real_name}</td>
+                        <td>{$v.u_mobile}</td>
+                        <td>{$v.nick_name}</td>
+                        <td>{$v.library}</td>
+                        <td>{$v.u_type}</td>
+                        <td>{$v.gender}</td>
+                        <td>{$v.is_backmoney}</td>
+                        <td>{$v.is_arrearage}</td>
+                        <td>{$v.created_time}</td>
+                        <td>{$v.last_login_time}</td>
+                        <td><a href="javaScript:;" class="check_money" attr-openId="{$v.u_wechat_id}" attr-token="{$v.token}">审核通过</a></td>
+                    </tr>
+                </volist>
+                <else />
+                <tr>
+                    <td colspan="11">您没有此权限</td>
+                </tr>
+            </if>
+        </table>
+        <div class="reader_more">
+            <div class="pagelist">
+                {$page}
+            </div>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script>
+        //审核通过
+        $(function(){
+                    $(".main_right_top ul").children(":eq(8)").addClass("on");
+                    $(".main_right_top ul").children(":eq(8)").find("a").find(".icon2").show();
+                    $(".main_right_top ul").children(":eq(8)").find("a").find(".icon1").hide();
+            $(".main_left_ul ul").children(":eq(3)").addClass("onup");
+
+
+
+            $('.check_money').click(function(){
+                var openId = $(this).attr('attr-openId');//获取openid
+                var token = $(this).attr('attr-token');//获取token
+                layer.open({
+                    content: '确认通过审核?',
+                    icon: 3,
+                    btn: ['是', '否'],
+                    yes: function () {
+                        //当前时间戳
+                        var timeStamp = Date.parse(new Date());
+                        //固定参数
+                        var type = 'ADMIN';
+                        if(!openId){
+                            //拼接str
+                            var str = timeStamp+token+type;
+                        }else {
+                            //拼接str
+                            var str = timeStamp+type+openId;
+                        }
+                        //加密
+                        var b = new Base64();
+                        var sign = b.encode(hex_sha1(str+'MGNiOTc3OGQyZjZhMjdhZGUwN2E0Y2Y2ODY1YThhYjYxN2Q5YTVkMA'));
+                        if(!openId){
+                            var data = 'timeStamp='+timeStamp+'&token='+token+'&type='+type+'&sign='+sign;
+                        }else {
+                            var data = 'timeStamp='+timeStamp+'&uWechatId='+openId+'&type='+type+'&sign='+sign;
+                        }
+                        //接口
+                        $.ajax({
+                            type:'post',
+                            url:GetIp()+'/api/users/withdraw',
+                            data:data,
+                            dataType:'json',
+                            success:function(data){
+                                console.log(data);
+                                if(data.code == 100){
+                                    var url = "{:U('App/backMoney')}";
+                                    return dialog.success('审核成功,押金已退还',url);
+                                }else {
+                                    return dialog.error(data.msg);
+                                }
+                            }
+
+                        });
+                    }
+                });
+            });
+        })
+    </script>
+</block>

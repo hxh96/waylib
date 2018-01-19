@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link href="/Public/favicon.ico" rel="shortcut icon">
+		<title>{$webTitle}|智能微图后台管理系统</title>
+		<link rel="stylesheet" href="__CSS__/base.css" />
+		<link rel="stylesheet" href="__CSS__/bootstrap.css" />
+		<link rel="stylesheet" href="__CSS__/style.css" />
+		<script type="text/javascript" src="__JS__/jquery-1.12.0.min.js" ></script>
+		<script type="text/javascript" src="__JS__/index.js" ></script>
+		<script src="__JS__/layer/layer.js"></script>
+		<script src="__JS__/dialog.js"></script>
+		<style>
+			html,body{
+				overflow-y:hidden ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="shouye_box">
+			<div class="admin">
+				<p><span>单&nbsp;&nbsp;&nbsp;位：</span>{$library}</p>
+				<p class="yonghuming"><span>用户名：</span>{$phone}</p>
+				<button class="change_psw" attr-uId="{$uId}">修改密码</button>
+				<button class="quit" id="loginOut">退出</button>
+			</div>
+			<script>
+				$(function(){
+					$('.change_psw').click(function(){
+						var uId = $(this).attr('attr-uId');
+						location.href = "{:U('Login/checkPwd')}?uId="+uId;
+					});
+					//退出登录
+					$('#loginOut').click(function(){
+						var url  = "{:U('Login/loginOut')}";
+						var jump_url = "{:U('Login/index')}";
+						$.ajax({
+							type:'get',
+							url:url,
+							data:'',
+							dataType:'json',
+							success:function(data){
+								if(data.code == 1) {
+									return dialog.success(data.message, jump_url);
+								}else {
+									return dialog.error(data.message);
+								}
+							}
+						});
+					});
+				})
+			</script>
+			<div class="index_icon">
+				<img src="__IMG__/danghangcaidan.png" />
+			</div>
+			<div class="shouye_top">
+				<ul class="outer">
+					<li class="a1">
+						<a href="{:U('User/index')}">
+							<img src="__IMG__/yonghuguanli.png" class="icon1"/>
+							<img src="__IMG__/yonghuguanl2.png" class="icon11"/>
+						</a>
+					</li>
+					<li class="a2">
+						<a href="{:U('Borrow/index')}">
+							<img src="__IMG__/jieyuexhaxun.png" class="icon2"/>
+							<img src="__IMG__/jieyuexhaxun2.png" class="icon22" style="margin-left: -1px;margin-top: 1px;"/>
+						</a>
+					</li>
+					<li class="a3">
+						<a href="#">
+							<img src="__IMG__/shipinjiankong.png" class="icon3"/>
+							<img src="__IMG__/shipinjiankong2.png" class="icon33"/>
+						</a>
+					</li>
+					<li class="a4">
+						<a href="{:U('Catalog/index')}">
+							<img src="__IMG__/zhijiebianmu.png" class="icon4"/>
+							<img src="__IMG__/zhijiebianmu2.png" class="icon44"/>
+						</a>
+					</li>
+				</ul>
+				<div class="heng1">
+					<img src="__IMG__/xian.png" />
+				</div>
+			</div>
+			<div class="shouye_bottom">
+				<ul>
+					<li class="a5">
+						<a href="{:U('App/index')}">
+							<img src="__IMG__/app.png" class="icon5"/>
+							<img src="__IMG__/app2.png" class="icon55"/>
+						</a>
+					</li>
+					<li class="a6">
+						<a href="{:U('Subscribe/index')}">
+							<img src="__IMG__/dingyueguanli.png" class="icon6"/>
+							<img src="__IMG__/dingyueguanli2.png" class="icon66"/>
+						</a>
+					</li>
+					<li class="a7">
+						<a href="{:U('Library/index')}">
+							<img src="__IMG__/tushuguanli.png" class="icon7"/>
+							<img src="__IMG__/tushuguanli2.png" class="icon77"/>
+						</a>
+					</li>
+					<li class="a8">
+						<a href="#">
+							<img src="__IMG__/dashuju.png" class="icon8"/>
+							<img src="__IMG__/dashuju2.png" class="icon88"/>
+						</a>
+					</li>
+					<li class="a9">
+						<a href="{:U('Exception/index')}">
+							<img src="__IMG__/yichangchuli.png" class="icon9"/>
+							<img src="__IMG__/yichangchuli2.png" class="icon99"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

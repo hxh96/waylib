@@ -1,0 +1,76 @@
+<extend name="Common/base" />
+<block name="menus">
+	{:W('Public/catalog_menus')}
+</block>
+<block name="content">
+		<div class="updown">
+			<div class="up_text">
+				<form  id="form" onsubmit="return false" method="post" class="form-horizontal" enctype="multipart/form-data">
+					<input type="hidden" id="isbn" name="fileName" value="{$isbn}">
+					<input type="hidden" id="timeStamp" name="timeStamp" value="">
+					<input type="hidden" id="sign" name="sign" value="">
+					<div class="up_pic outer">
+						<p>上传图片：</p>
+						<input type="file"  id="upFile" name="upFile"/>
+					</div>
+					<!--<div class="them_name outer">-->
+					<!--<p>专题名：</p>-->
+					<!--<input type="text" placeholder="请输入专题名"/>-->
+					<!--</div>-->
+					<!--<div class="them_pro outer">-->
+					<!--<p>专题说明：</p>-->
+					<!--<textarea></textarea>-->
+					<!--</div>-->
+					<div class="them_btn outer">
+						<a href="javaScript:;" id="submit" class="them_sure">确定</a>
+						<a href="{:U('Catalog/audit')}" class="them_close">取消</a>
+					</div>
+				</form>
+			</div>
+		</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(3)").addClass("on");
+			$(".main_right_top ul").children(":eq(3)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(3)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(1)").addClass("onup");
+
+			$('#submit').click(function(){
+				//当前时间戳
+				var timeStamp = Date.parse(new Date());
+				$('#timeStamp').val(timeStamp);
+				//实例化base64对象
+				var b = new Base64();
+				var fileName = $('#isbn').val();
+				var str = fileName+timeStamp;
+				var sign = b.encode(hex_sha1(str + 'MGNiOTc3OGQyZjZhMjdhZGUwN2E0Y2Y2ODY1YThhYjYxN2Q5YTVkMA'));
+				$('#sign').val(sign);
+				var files = document.getElementById("upFile").files;
+				// FormData 对象
+				var form = new FormData();// 可以增加表单数据
+				form.append("upFile", files[0]);// 文件对象
+				form.append("fileName", fileName);// 文件对象
+				form.append("timeStamp", timeStamp);// 文件对象
+				form.append("sign", sign);// 文件对象
+				$.ajax({
+					type:'post',
+					url:GetIp()+'/public/book/upFile',
+					data:form,
+					processData: false,
+					contentType: false,
+					success:function(data){
+						console.log(data);
+						if(data.code == 100){
+							var url= "{:U('Catalog/audit')}";
+							return dialog.success('上传成功',url);
+						}else {
+							return dialog.error('上传失败');
+						}
+					}
+				});
+			});
+		});
+	</script>
+</block>

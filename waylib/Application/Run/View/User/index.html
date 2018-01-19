@@ -1,0 +1,142 @@
+<extend name="Common/base" />
+<block name="menus">
+	{:W('Public/user_menus')}
+</block>
+
+<block name="content">
+		<div class="choose">
+			<div class="kind">
+				<form class="outer">
+					<div class="choose8">
+						<select id="type">
+							<option value="u_mobile" {$type=='u_mobile'?'selected':''}>手机号</option>
+							<option value="u_name" {$type=='u_name'?'selected':''}>读者证号</option>
+						</select>
+						<input type="text" class="input-medium" id="type_content" value="{$content}"/>
+					</div>
+					<if condition="($status eq 1)">
+						<div class="choose3 outer">
+							<p>图书馆</p>
+							<select id="libId">
+								<option value="">请选择</option>
+								<volist name="librarys" id="v">
+									<option value="{$v.id}" {$library_id==$v[id]?'selected':''}>{$v.name}</option>
+								</volist>
+							</select>
+						</div>
+						<else/>
+					</if>
+					<div class="choose3 outer">
+						<p>用户类型</p>
+						<select id="uType">
+							<option value="1" {$u_type==1?'selected':''}>智能微图用户</option>
+							<option value="2" {$u_type==2?'selected':''}>图书馆用户</option>
+						</select>
+					</div>
+					<div class="choose4 outer">
+						<p>押金</p>
+						<select id="deposited">
+							<option value="1" {$is_deposited==1?'selected':''}>是</option>
+							<option value="0" {$is_deposited==0?'selected':''}>否</option>
+						</select>
+					</div>
+					<div class="choose5 outer">
+						<p>状态</p>
+						<select id="status">
+							<option value="1" {$u_status==1?'selected':''}>启用</option>
+							<option value="0" {$u_status==0?'selected':''}>封停</option>
+						</select>
+					</div>
+					<div class="search">
+						<img src="__IMG__/search.png" attr-role="{$role}" attr-libraryId="{$libraryId}" id="userBtn"/>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				//读者搜索
+				$('#userBtn').click(function(){
+					var role = $(this).attr('attr-role');//身份
+					if(role == 1){
+						//根据身份获取图书馆ID
+						var libraryId = $("#libId option:selected").val();
+					}else{
+						var libraryId = $(this).attr('attr-libraryId');
+					}
+					var uType = $("#uType option:selected").val();//用户类型
+					var deposited = $("#deposited option:selected").val();//押金状态
+					var status = $("#status option:selected").val();//状态
+
+					var type_content = $('#type_content').val();//手机号(读者证号)
+					//判断是否使用读者证或手机号进行搜索
+					if(!type_content){
+						//判断是否选择图书馆
+						if(!libraryId){
+							location.href="{:U('User/index')}?ut="+uType+'&de='+deposited+'&st='+status;
+						}else {
+							location.href="{:U('User/index')}?lib="+libraryId+'&ut='+uType+'&de='+deposited+'&st='+status;
+						}
+					}else {
+						var type = $("#type option:selected").val();//检索类型
+						//判断是否选择图书馆
+						if(!libraryId){
+							location.href="{:U('User/index')}?ty="+type+'&ct='+type_content+'&ut='+uType+'&de='+deposited+'&st='+status;
+						}else {
+							location.href="{:U('User/index')}?ty="+type+'&ct='+type_content+'&lib='+libraryId+'&ut='+uType+'&de='+deposited+'&st='+status;
+						}
+					}
+				})
+			})
+		</script>
+		<div class="main_biaoge">
+			<table  class="table1 table-bordered table-striped table">
+					<tr>
+						<th>姓名</th>
+						<th>电话号码</th>
+						<th>读者证号</th>
+						<th>图书馆</th>
+						<th>读者类型</th>
+						<th>性别</th>
+						<th>是否交押金</th>
+						<th>欠款金额（元）</th>
+						<th>注册时间</th>
+						<th>最后一次登录</th>
+						<th>状态</th>
+						<th>操作</th>
+					</tr>
+						<volist name="lists" id="v">
+							<tr>
+								<td>{$v.user_real_name}</td>
+								<td>{$v.u_mobile}</td>
+								<td>{$v.u_name}</td>
+								<td>{$v.library}</td>
+								<td>{$v[u_type]==1?'智能微图用户':'图书馆用户'}</td>
+								<td>{$v[gender]==1?'男':'女'}</td>
+								<td>{$v[is_deposited]==1?'是':'否'}</td>
+								<td>100.00</td>
+								<td>{$v.created_time}</td>
+								<td>{$v.last_login_time}</td>
+								<td>{$v[status]==1?'启用':'封停'}</td>
+								<td><a href="{:U('User/info',['uId'=>$v[user_id]])}">查看</a></td>
+							</tr>
+						</volist>
+				</table>
+			<div class="reader_more">
+				<div class="pagelist">
+					{$page}
+				</div>
+			</div>
+		</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":first").addClass("on");
+			$(".main_right_top ul").children(":first").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":first").find("a").find(".icon1").hide();
+
+			$(".main_left_ul ul").children(":first").addClass("onup");
+		})
+	</script>
+</block>

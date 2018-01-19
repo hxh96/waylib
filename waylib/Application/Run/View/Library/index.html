@@ -1,0 +1,181 @@
+<extend name="Common/base" />
+<block name="model">
+	<!--编辑图书馆开始-->
+	<div id="LoginBox10">
+		<div class="lib_list" id="editLib">
+			<!--run.js  里面-->
+		</div>
+	</div>
+	<!--编辑图书馆结束-->
+	<!--新增图书馆开始-->
+	<div id="LoginBox11">
+		<div class="lib_list">
+			<form id="add">
+				<div class="lib_id outer lib_commmon">
+					<p>图书馆ID：</p>
+					<input type="text" name="id"/>
+				</div>
+				<div class="lib_name outer lib_sel">
+					<p>图书馆名称：</p>
+					<input type="text" name="name"/>
+				</div>
+				<div class="lib_num outer lib_commmon">
+					<p>可借数量：</p>
+					<input type="text" name="max_lend_times"/>
+				</div>
+				<div class="lib_num outer lib_sel">
+					<p>管理系统：</p>
+					<select name="sys_type">
+						<volist name="sys_types" id="v">
+							<option value="{$v.id}" {$z==$v[id]?'selectes':''}>{$v.name}</option>
+						</volist>
+					</select>
+				</div>
+			</form>
+			<div class="lib_btns outer">
+				<div class="lib_sure" id="addLib">确定</div>
+				<div class="lib_close close_btn">取消</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			//新增图书馆
+			$('#addLib').click(function(){
+				var add = $("#add").serialize();
+				$.ajax({
+					type:'post',
+					url:"{:U('Library/addLib')}",
+					data:add,
+					dataType:'json',
+					success:function(data){
+						if(data.code == 1){
+							var url = "{:U('Library/index')}";
+							return dialog.success('添加成功',url);
+						}else {
+							return dialog.error(data.message);
+						}
+					}
+				});
+			})
+		})
+	</script>
+	<!--新增图书馆结束-->
+</block>
+<block name="menus">
+	{:W('Public/library_menus')}
+</block>
+<block name="content">
+	<if condition="($status eq 1)">
+		<div class="choose">
+			<div class="kind">
+				<form class="outer">
+
+					<div class="choose2 outer">
+						<p>图书馆</p>
+						<input type="text" class="input-medium" id="libName" value="{$libName}"/>
+					</div>
+					<div class="search">
+						<img src="__IMG__/search.png" id="search"/>
+					</div>
+				</form>
+				<div class="more_warden example11">
+					<img src="__IMG__/xztsg.png" />
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				//搜索
+				$('#search').click(function(){
+					var libName = $("#libName").val();//获取当前选择项的值.
+					location.href = "{:U('Library/index')}?libName="+libName;
+				});
+			})
+		</script>
+		<else/>
+	</if>
+
+	<div class="main_biaoge">
+		<table  class="table1 table-bordered table-striped table table13">
+				<tr>
+					<th>ID</th>
+					<th>图书馆名称</th>
+					<th>查看机器</th>
+					<th>查看API</th>
+					<th>管理系统</th>
+					<th>可借数量</th>
+					<th>操作</th>
+				</tr>
+			<if condition="($status eq 1)">
+				<volist name="lists" id="v">
+					<tr>
+						<td>{$v.id}</td>
+						<td>{$v.name}</td>
+						<td><a href="{:U('Library/mach',['libId'=>$v[id]])}">
+							<img src="__IMG__/jq.png" />
+						</a></td>
+						<td>
+							<a href="{:U('Library/api',['libId'=>$v[id]])}">
+								<img src="__IMG__/API.png" />
+							</a>
+						</td>
+						<td>{$v.sys_type}</td>
+						<td>{$v.max_lend_times}</td>
+						<td class="outer">
+							<a href="#" class="lib_bianji example10" attr-id="{$v.id}" attr-sys="{$v.sys_type}">编辑</a>
+							<!--	<img src="__IMG__/fg.png" />-->
+							<a href="javaScript:;" attr-id="{$v.id}" class="del">删除</a>
+						</td>
+					</tr>
+				</volist>
+				<else/>
+					<tr>
+						<td colspan="7">您没有此权限</td>
+					</tr>
+			</if>
+			</table>
+		<div class="reader_more">
+			<div class="pagelist">
+				{$page}
+			</div>
+		</div>
+	</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(7)").addClass("on");
+			$(".main_right_top ul").children(":eq(7)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(7)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(0)").addClass("onup");
+
+
+			//删除
+			$('.del').click(function(){
+				var id = $(this).attr('attr-id');
+				layer.open({
+					content: '确认删除?',
+					icon: 3,
+					btn: ['是', '否'],
+					yes: function () {
+						$.ajax({
+							type:'get',
+							url:"{:U('Library/delLib')}",
+							data:'id='+id,
+							dataType:'json',
+							success:function(data){
+								if(data.code == 1){
+									var url = "{:U('Library/index')}";
+									return dialog.success('删除成功',url);
+								}else {
+									return dialog.error(data.message);
+								}
+							}
+						});
+					}
+				});
+			})
+		});
+	</script>
+</block>

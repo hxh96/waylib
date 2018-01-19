@@ -1,0 +1,54 @@
+<extend name="Common/base" />
+<block name="menus">
+	{:W('Public/exception_menus')}
+</block>
+<block name="content">
+	<div class="hand_main">
+		<h2>异常情况处理</h2>
+		<div class="hand_list">
+			<ul>
+				<li class="hand1">
+					<a href="{:U('Exception/handle1_1')}">
+						借书成功，柜中无书
+					</a>
+				</li>
+				<li class="hand2">
+					<a href="{:U('Exception/handle2_1')}">
+						借书成功，书目信息有误
+					</a>
+				</li>
+				<li class="hand3">
+					<a href="{:U('Exception/handle3_1')}">
+						盘点，系统有书，柜中无书
+					</a>
+				</li>
+				<li class="hand4">
+					<a href="{:U('Exception/handle4_1')}">
+						盘点，系统无书，柜中有书
+					</a>
+				</li>
+				<li class="hand5">
+					<a href="{:U('Exception/handle5_1')}">
+						盘点，书目信息有误
+					</a>
+				</li>
+				<li class="hand6 outer">
+					<a href="{:U('Exception/handle6_1')}">
+						<img src="__IMG__/tijiao(1).png" />
+						<p>遇到新的异常，提交反馈</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(6)").addClass("on");
+			$(".main_right_top ul").children(":eq(6)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(6)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(0)").addClass("onup");
+		})
+	</script>
+</block>

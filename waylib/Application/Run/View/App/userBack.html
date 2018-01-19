@@ -1,0 +1,88 @@
+<extend name="Common/base" />
+	<block name="content">
+
+		<if condition="($status eq 1)">
+			<div class="choose">
+				<div class="kind">
+					<form class="outer">
+						<div class="choose8">
+							<select id="type">
+								<option value="u_mobile">手机号</option>
+								<option value="u_name">读者证号</option>
+							</select>
+							<input type="text" class="input-medium" placeholder="请输入内容" id="content" value="{$content}"/>
+						</div>
+						<div class="search">
+							<img src="__IMG__/search.png" id="search_content"/>
+						</div>
+					</form>
+				</div>
+			</div>
+			<script>
+				$(function(){
+					//反馈搜索
+					$('#search_content').click(function(){
+						var type = $("#type option:selected").val();//获取当前选择项的值.
+						var content = $('#content').val();
+						if(!content){
+							return dialog.error('请输入内容');
+						}else {
+							location.href = "{:U('App/userBack')}?t="+type+'&ct='+content;
+						}
+					});
+				})
+			</script>
+			<else />
+		</if>
+		<div class="main_biaoge">
+			<table  class="table1 table-bordered table-striped table table9 ">
+					<tr>
+						<th>姓名</th>
+						<th>电话号码</th>
+						<th>读者证号</th>
+						<th>反馈内容</th>
+						<th>反馈回复</th>
+						<th>处理状态</th>
+						<th>操作</th>
+					</tr>
+				<if condition="($status eq 1)">
+					<volist name="lists" id="v">
+						<tr>
+							<td>{$v.user_real_name}</td>
+							<td>{$v.u_mobile}</td>
+							<td>{$v.u_name}</td>
+							<td>{$v.content}</td>
+							<td></td>
+							<td></td>
+							<td>
+								<a href="#">
+									<img src="__IMG__/cz.png" />
+								</a>
+							</td>
+						</tr>
+					</volist>
+					<else />
+					<tr>
+						<td colspan="11">您没有此权限</td>
+					</tr>
+				</if>
+
+				</table>
+			<div class="reader_more">
+				<div class="pagelist">
+					{$page}
+				</div>
+			</div>
+		</div>
+	</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(8)").addClass("on");
+			$(".main_right_top ul").children(":eq(8)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(8)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(4)").addClass("onup");
+
+		})
+	</script>
+</block>

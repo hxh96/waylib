@@ -1,0 +1,2922 @@
+[ 2017-12-18T09:26:55+08:00 ] ::1 /waylib/index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T09:26:55+08:00 ] ::1 /waylib/index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:27:23+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T09:27:24+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:28:39+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:28:40+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.5337439984487931
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:28:46+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `waylib_user`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `waylib_user`
+
+[ 2017-12-18T09:28:47+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:28:54+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.0363437030454663
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:29:01+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `waylib_user`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `waylib_user`
+
+[ 2017-12-18T09:29:32+08:00 ] 127.0.0.1 /Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:29:32+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T09:29:44+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '18483692324' LIMIT 1   [ RunTime:0.0400s ]
+SQL: UPDATE `waylib_user` SET `last_login_time`='2017-12-18 09:29:44' WHERE `user_id` = 218 [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T09:29:46+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:29:51+08:00 ] 127.0.0.1 /index.php/Run/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:30:17+08:00 ] 127.0.0.1 /index.php/Run/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T09:30:19+08:00 ] 127.0.0.1 /index.php/Run/Borrow/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T09:30:28+08:00 ] 127.0.0.1 /index.php/Run/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-12-18T09:30:32+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T09:33:42+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0440s ]
+SQL: UPDATE `waylib_user` SET `status`='0' WHERE `user_id` = 59 [ RunTime:0.0460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-12-18T09:33:47+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:33:50+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T09:33:59+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0430s ]
+SQL: UPDATE `waylib_user` SET `status`='1' WHERE `user_id` = 59 [ RunTime:0.0430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T09:45:19+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:45:21+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:45:21+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T09:45:27+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0380s ]
+SQL: UPDATE `waylib_user` SET `status`='0' WHERE `user_id` = 59 [ RunTime:0.0380s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0360s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:45:27','59','封停管理员账号') [ RunTime:0.0390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:45:28+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:46:18+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T09:46:22+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0400s ]
+SQL: UPDATE `waylib_user` SET `status`='1' WHERE `user_id` = 59 [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0370s ]
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:46:22','59','启用管理员账号')
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:46:22','59','启用管理员账号')
+
+[ 2017-12-18T09:46:25+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0390s ]
+SQL: UPDATE `waylib_user` SET `status`='1' WHERE `user_id` = 59 [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-12-18T09:46:38+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:46:43+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:47:05+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0450s ]
+SQL: UPDATE `waylib_user` SET `status`='0' WHERE `user_id` = 59 [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0430s ]
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:47:05','59','封停管理员账号')
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:47:05','59','封停管理员账号')
+
+[ 2017-12-18T09:47:32+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0400s ]
+SQL: UPDATE `waylib_user` SET `status`='0' WHERE `user_id` = 59 [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T09:47:41+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T09:47:45+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:47:47+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:47:50+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:47:56+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T09:47:59+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0420s ]
+SQL: UPDATE `waylib_user` SET `status`='1' WHERE `user_id` = 59 [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0430s ]
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:47:59','59','启用管理员账号')
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:47:59','59','启用管理员账号')
+
+[ 2017-12-18T09:48:00+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0380s ]
+SQL: UPDATE `waylib_user` SET `status`='1' WHERE `user_id` = 59 [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T09:48:03+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:48:09+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0390s ]
+SQL: UPDATE `waylib_user` SET `status`='0' WHERE `user_id` = 218 [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0400s ]
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:48:09','218','封停管理员账号')
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:48:09','218','封停管理员账号')
+
+[ 2017-12-18T09:48:13+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:48:16+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0400s ]
+SQL: UPDATE `waylib_user` SET `status`='1' WHERE `user_id` = 218 [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0390s ]
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:48:16','218','启用管理员账号')
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:48:16','218','启用管理员账号')
+
+[ 2017-12-18T09:48:19+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:49:05+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:49:05+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T09:49:06+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:49:06+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:49:14+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0440s ]
+SQL: UPDATE `waylib_user` SET `status`='0' WHERE `user_id` = 59 [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0450s ]
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:49:14','59','封停管理员账号')
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:49:14','59','封停管理员账号')
+
+[ 2017-12-18T09:49:49+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T09:49:53+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0390s ]
+SQL: UPDATE `waylib_user` SET `status`='1' WHERE `user_id` = 59 [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0380s ]
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:49:53','59','启用管理员账号')
+ERR: 1062:Duplicate entry '218' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 09:49:53','59','启用管理员账号')
+
+[ 2017-12-18T09:49:56+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:03:17+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:03:17+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:03:21+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0390s ]
+SQL: UPDATE `waylib_user` SET `status`='0' WHERE `user_id` = 59 [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0390s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:03:21','59','封停管理员账号') [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T10:03:22+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:03:41+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:03:54+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0380s ]
+SQL: UPDATE `waylib_user` SET `status`='1' WHERE `user_id` = 59 [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0360s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:03:54','59','启用管理员账号') [ RunTime:0.0460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-12-18T10:04:26+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T10:11:54+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:11:55+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:11:55+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:12:06+08:00 ] 127.0.0.1 /index.php/Run/User/resetPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0360s ]
+SQL: UPDATE `waylib_user` SET `u_pwd`='NTY1YWZjMjc2ZTZmZTg3NjNjMWU5MGE2YzFiNzQyNDQ1NjE2Mjg0Yw==' WHERE `user_id` = 218 [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-12-18T10:31:59+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2017-12-18T10:32:20+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2017-12-18T10:35:17+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2017-12-18T10:35:18+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:35:18+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:36:14+08:00 ] 127.0.0.1 /index.php/Run/User/resetPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0390s ]
+SQL: UPDATE `waylib_user` SET `u_pwd`='NTY1YWZjMjc2ZTZmZTg3NjNjMWU5MGE2YzFiNzQyNDQ1NjE2Mjg0Yw==' WHERE `user_id` = 218 [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-12-18T10:36:19+08:00 ] 127.0.0.1 /index.php/Run/User/resetPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0380s ]
+SQL: UPDATE `waylib_user` SET `u_pwd`='ZGY5YjdiOWJhY2ZhZDM2MWE0OWVlMDc0MDZmOWE2NzAzMjg4ZDFlOA==' WHERE `user_id` = 218 [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0370s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:36:19','218','重置密码') [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T10:36:20+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:41:01+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:41:29+08:00 ] 127.0.0.1 /index.php/Run/User/adminAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0400s ]
+SQL: INSERT INTO `waylib_user` (`user_real_name`,`u_mobile`,`u_pwd`,`gender`,`status`,`library_id`,`user_role`,`created_time`) VALUES ('张三','13212321231','NTY1YWZjMjc2ZTZmZTg3NjNjMWU5MGE2YzFiNzQyNDQ1NjE2Mjg0Yw==','1','1','SCYT003','ADMIN','2017-12-18 10:41:28') [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0390s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:41:28','226','添加管理员') [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T10:41:30+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T10:43:09+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:43:13+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0390s ]
+SQL: UPDATE `waylib_user` SET `status`='0' WHERE `user_id` = 226 [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0370s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:43:13','226','封停管理员账号') [ RunTime:0.0390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-12-18T10:43:15+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:43:24+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:43:27+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0390s ]
+SQL: UPDATE `waylib_user` SET `status`='1' WHERE `user_id` = 226 [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0370s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:43:27','226','启用管理员账号') [ RunTime:0.0390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T10:43:29+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T10:44:47+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:44:49+08:00 ] 127.0.0.1 /index.php/Run/Login/checkPwd/uId/218.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T10:45:12+08:00 ] 127.0.0.1 /index.php/Run/Login/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `waylib_user` WHERE `user_id` = 218 LIMIT 1   [ RunTime:0.0420s ]
+SQL: UPDATE `waylib_user` SET `u_pwd`='NTY1YWZjMjc2ZTZmZTg3NjNjMWU5MGE2YzFiNzQyNDQ1NjE2Mjg0Yw==' WHERE `user_id` = 218 [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0410s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:45:12','218','修改密码') [ RunTime:0.0430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T10:45:13+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T10:45:13+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T10:45:40+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '18483692324' LIMIT 1   [ RunTime:0.0390s ]
+SQL: UPDATE `waylib_user` SET `last_login_time`='2017-12-18 10:45:40' WHERE `user_id` = 218 [ RunTime:0.0440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:45:41+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:46:34+08:00 ] 127.0.0.1 /index.php/Run/Login/loginOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:46:36+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T10:46:36+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T10:46:37+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T10:46:37+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:46:43+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '18483692324' LIMIT 1   [ RunTime:0.0370s ]
+SQL: UPDATE `waylib_user` SET `last_login_time`='2017-12-18 10:46:43' WHERE `user_id` = 218 [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0370s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:46:43','0','管理员登录') [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T10:46:44+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:47:11+08:00 ] 127.0.0.1 /index.php/Run/Login/checkPwd.html?uId=218
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:47:13+08:00 ] 127.0.0.1 /index.php/Run/Login/loginOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T10:47:14+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:47:14+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T10:47:23+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '18483692324' LIMIT 1   [ RunTime:0.0380s ]
+SQL: UPDATE `waylib_user` SET `last_login_time`='2017-12-18 10:47:23' WHERE `user_id` = 218 [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0380s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:47:23',NULL,'管理员登录') [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T10:47:25+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:48:01+08:00 ] 127.0.0.1 /index.php/Run/Login/forgetPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T10:50:17+08:00 ] 127.0.0.1 /index.php/Run/Login/forgetPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:50:18+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:50:18+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:50:18+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:50:18+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:50:18+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T10:50:19+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T10:50:26+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '18483692324' LIMIT 1   [ RunTime:0.0440s ]
+SQL: UPDATE `waylib_user` SET `last_login_time`='2017-12-18 10:50:26' WHERE `user_id` = 218 [ RunTime:0.0570s ]
+NOTIC: [2] Missing argument 2 for addlog(), called in D:\phpStudy\WWW\waylib\Application\Run\Controller\LoginController.class.php on line 75 and defined D:\phpStudy\WWW\waylib\Application\Run\Common\function.php 第 11 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\waylib\Application\Run\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0430s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('0','2017-12-18 10:50:26',NULL,NULL) [ RunTime:0.0450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T10:50:27+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:51:20+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:51:23+08:00 ] 127.0.0.1 /index.php/Run/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:51:25+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:51:29+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0400s ]
+SQL: UPDATE `waylib_user` SET `status`='0' WHERE `user_id` = 226 [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0400s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('0','2017-12-18 10:51:29',NULL,'226') [ RunTime:0.0420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:51:30+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:52:46+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T10:52:48+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:52:50+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0390s ]
+SQL: UPDATE `waylib_user` SET `status`='1' WHERE `user_id` = 226 [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0380s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES (NULL,'2017-12-18 10:52:50','226','启用管理员账号') [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T10:52:54+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T10:55:58+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:56:02+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0440s ]
+SQL: UPDATE `waylib_user` SET `status`='0' WHERE `user_id` = 226 [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0430s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:56:02','226','封停管理员账号') [ RunTime:0.0440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T10:56:08+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:56:13+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T10:56:21+08:00 ] 127.0.0.1 /index.php/Run/User/resetPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0390s ]
+SQL: UPDATE `waylib_user` SET `u_pwd`='ZGY5YjdiOWJhY2ZhZDM2MWE0OWVlMDc0MDZmOWE2NzAzMjg4ZDFlOA==' WHERE `user_id` = 226 [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0380s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:56:21','226','重置密码') [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-12-18T10:56:27+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T10:56:29+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html?st=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:56:32+08:00 ] 127.0.0.1 /index.php/Run/User/checkStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0380s ]
+SQL: UPDATE `waylib_user` SET `status`='1' WHERE `user_id` = 226 [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0370s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:56:32','226','启用管理员账号') [ RunTime:0.0390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T10:56:33+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:56:44+08:00 ] 127.0.0.1 /index.php/Run/Login/checkPwd/uId/218.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:57:02+08:00 ] 127.0.0.1 /index.php/Run/Login/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `waylib_user` WHERE `user_id` = 218 LIMIT 1   [ RunTime:0.0400s ]
+SQL: UPDATE `waylib_user` SET `u_pwd`='NTY1YWZjMjc2ZTZmZTg3NjNjMWU5MGE2YzFiNzQyNDQ1NjE2Mjg0Yw==' WHERE `user_id` = 218 [ RunTime:0.0480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T10:58:08+08:00 ] 127.0.0.1 /index.php/Run/Login/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `waylib_user` WHERE `user_id` = 218 LIMIT 1   [ RunTime:0.0450s ]
+SQL: UPDATE `waylib_user` SET `u_pwd`='ZGY5YjdiOWJhY2ZhZDM2MWE0OWVlMDc0MDZmOWE2NzAzMjg4ZDFlOA==' WHERE `user_id` = 218 [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0440s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:58:08','218','修改密码') [ RunTime:0.0470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T10:58:09+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:58:09+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T10:58:22+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '18483692324' LIMIT 1   [ RunTime:0.0430s ]
+SQL: UPDATE `waylib_user` SET `last_login_time`='2017-12-18 10:58:22' WHERE `user_id` = 218 [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0430s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 10:58:22',NULL,'管理员登录') [ RunTime:0.0480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T10:58:23+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:58:31+08:00 ] 127.0.0.1 /index.php/Run/Login/loginOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:58:31+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:58:32+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T10:58:32+08:00 ] 127.0.0.1 /index.php/Run/Login/forgetPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-12-18T11:00:27+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:00:27+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T11:00:34+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:00:36+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.647140170376304
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:00:41+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '18483692324' LIMIT 1   [ RunTime:0.0420s ]
+SQL: UPDATE `waylib_user` SET `last_login_time`='2017-12-18 11:00:41' WHERE `user_id` = 218 [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0410s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 11:00:41',NULL,'管理员登录') [ RunTime:0.0450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T11:00:42+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:00:46+08:00 ] 127.0.0.1 /index.php/Run/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:00:47+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:01:02+08:00 ] 127.0.0.1 /index.php/Run/User/adminAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0440s ]
+SQL: INSERT INTO `waylib_user` (`user_real_name`,`u_mobile`,`u_pwd`,`gender`,`status`,`library_id`,`user_role`,`created_time`) VALUES ('asd','18500941354','NTY1YWZjMjc2ZTZmZTg3NjNjMWU5MGE2YzFiNzQyNDQ1NjE2Mjg0Yw==','1','1','SCYT003','ADMIN','2017-12-18 11:01:02') [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0430s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 11:01:02','227','添加管理员') [ RunTime:0.0490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:01:04+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:01:06+08:00 ] 127.0.0.1 /index.php/Run/Login/loginOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:01:07+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:01:07+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:01:08+08:00 ] 127.0.0.1 /index.php/Run/Login/forgetPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:01:26+08:00 ] 127.0.0.1 /index.php/Run/Login/forgetPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '18500941354' LIMIT 1   [ RunTime:0.0440s ]
+SQL: UPDATE `waylib_user` SET `u_pwd`='Mzk0OTUxNWZiOWRkY2EzZDJiNGM2YzJlZGZlODg3OTUxZTY1ZWMxMw==' WHERE `user_id` = 227 [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0430s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('227','2017-12-18 11:01:26',NULL,'找回密码') [ RunTime:0.0530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-12-18T11:01:27+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:01:27+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T11:02:18+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '18483692324' LIMIT 1   [ RunTime:0.0440s ]
+SQL: UPDATE `waylib_user` SET `last_login_time`='2017-12-18 11:02:18' WHERE `user_id` = 218 [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0430s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 11:02:18',NULL,'管理员登录') [ RunTime:0.0470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T11:02:20+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:02:32+08:00 ] 127.0.0.1 /index.php/Run/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:13:41+08:00 ] 127.0.0.1 /index.php/Run/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:13:49+08:00 ] 127.0.0.1 /index.php/Run/User/info/uId/131.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:14:07+08:00 ] 127.0.0.1 /index.php/Run/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:14:15+08:00 ] 127.0.0.1 /index.php/Run/Borrow/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:14:19+08:00 ] 127.0.0.1 /index.php/Run/Catalog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:14:22+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T11:14:24+08:00 ] 127.0.0.1 /index.php/Run/Library/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:14:30+08:00 ] 127.0.0.1 /index.php/Run/App/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 1054:Unknown column 'sort' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `waylib_machine_lattice` WHERE `mach_id` = 'SCGADXP00101' AND `book_id` <> '' ORDER BY sort asc 
+
+[ 2017-12-18T11:14:34+08:00 ] 127.0.0.1 /index.php/Run/App/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 1054:Unknown column 'sort' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `waylib_machine_lattice` WHERE `mach_id` = 'SCGADXP00101' AND `book_id` <> '' ORDER BY sort asc 
+
+[ 2017-12-18T11:14:49+08:00 ] 127.0.0.1 /index.php/Run/App/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 1054:Unknown column 'sort' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `waylib_machine_lattice` WHERE `mach_id` = 'SCGADXP00101' AND `book_id` <> '' ORDER BY sort asc 
+
+[ 2017-12-18T11:15:46+08:00 ] 127.0.0.1 /index.php/Run/App/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:15:54+08:00 ] 127.0.0.1 /index.php/Run/App/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:16:01+08:00 ] 127.0.0.1 /index.php/Run/App/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:16:04+08:00 ] 127.0.0.1 /index.php/Run/App/them.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:16:08+08:00 ] 127.0.0.1 /index.php/Run/App/push.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:16:11+08:00 ] 127.0.0.1 /index.php/Run/App/userBack.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:16:18+08:00 ] 127.0.0.1 /index.php/Run/Library/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:16:22+08:00 ] 127.0.0.1 /index.php/Run/Library/api/libId/SCGADXP001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:16:24+08:00 ] 127.0.0.1 /index.php/Run/Library/mach/libId/SCGADXP001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:16:38+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:16:40+08:00 ] 127.0.0.1 /index.php/Run/Catalog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:16:51+08:00 ] 127.0.0.1 /index.php/Run/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:16:54+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T11:35:53+08:00 ] 127.0.0.1 /index.php/Run/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:36:02+08:00 ] 127.0.0.1 /index.php/Run/Login/loginOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-12-18T11:36:03+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:36:03+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:36:33+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '\' or \'1' LIMIT 1   [ RunTime:0.0430s ]
+
+[ 2017-12-18T11:37:34+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:37:36+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.6877212243494493
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:37:41+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0340s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '\' or \'1=1' LIMIT 1   [ RunTime:0.0340s ]
+
+[ 2017-12-18T11:37:52+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.06947979343640598
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:37:57+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '\' or 1=1\'' LIMIT 1   [ RunTime:0.0370s ]
+
+[ 2017-12-18T11:38:37+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T11:38:37+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:38:39+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.06940676352049491
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:38:39+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.9585625428039894
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:38:40+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.5818799366271064
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T11:38:40+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.5886696838248686
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:38:40+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.0019179562345101875
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T11:38:40+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.34739733349176904
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:38:40+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.46134199273610954
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:38:41+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.8382883334546996
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:38:41+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.8832759234575394
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:38:41+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.29326709748749424
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:38:42+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.01909969173851067
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:38:42+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.44205871610136716
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T11:38:43+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.9422735558449249
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:38:45+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Zz
+
+[ 2017-12-18T11:41:15+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Zz
+
+[ 2017-12-18T11:41:15+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Zz
+
+[ 2017-12-18T11:41:16+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Zz
+
+[ 2017-12-18T11:41:20+08:00 ] 127.0.0.1 /index.php/Run/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:41:20+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T11:41:20+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T11:41:22+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Zz
+
+[ 2017-12-18T11:41:49+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Zz
+
+[ 2017-12-18T11:45:04+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-12-18T11:45:05+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:45:05+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:45:05+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:45:06+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:45:42+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:45:46+08:00 ] 127.0.0.1 /index.php/Run/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:45:46+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T11:45:46+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:45:49+08:00 ] 127.0.0.1 /index.php/Run/nihao%20/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:45:55+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:51:52+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:51:52+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:51:54+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:51:57+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:52:06+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T11:52:42+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:52:57+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:52:58+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:52:59+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T11:52:59+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:53:02+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:53:02+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:53:02+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T11:53:04+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:53:07+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:53:07+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T11:53:07+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T11:53:08+08:00 ] 127.0.0.1 /index.php/Run/Login/zzz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:zzz
+
+[ 2017-12-18T12:22:43+08:00 ] 127.0.0.1 /index.php/Run/zz/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T12:22:49+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T12:22:51+08:00 ] 127.0.0.1 /index.php/Run/Login/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:zz
+
+[ 2017-12-18T12:23:25+08:00 ] 127.0.0.1 /index.php/Run/Login/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:zz
+
+[ 2017-12-18T12:23:30+08:00 ] 127.0.0.1 /index.php/Run/zz/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T12:23:32+08:00 ] 127.0.0.1 /index.php/Run/Login/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:zz
+
+[ 2017-12-18T14:13:37+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:13:37+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:13:37+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:13:38+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:13:38+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:13:40+08:00 ] 127.0.0.1 /index.php/Run/Login/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T14:13:51+08:00 ] 127.0.0.1 /index.php/Run/index/zzz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:13:51+08:00 ] 127.0.0.1 /index.php/Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:13:51+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:17:04+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:17:06+08:00 ] 127.0.0.1 /index.php/Run/Login/ver.html?0.6328972226931047
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:17:11+08:00 ] 127.0.0.1 /index.php/Run/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '18483692324' LIMIT 1   [ RunTime:0.0450s ]
+SQL: UPDATE `waylib_user` SET `last_login_time`='2017-12-18 14:17:11' WHERE `user_id` = 218 [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0440s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 14:17:11',NULL,'管理员登录') [ RunTime:0.0480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T14:17:12+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-12-18T14:17:15+08:00 ] 127.0.0.1 /index.php/Run/Index/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:zz
+
+[ 2017-12-18T14:17:25+08:00 ] 127.0.0.1 /index.php/Run/Index/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:17:33+08:00 ] 127.0.0.1 /index.php/Run/Index/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:17:34+08:00 ] 127.0.0.1 /index.php/Run/Index/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:17:34+08:00 ] 127.0.0.1 /index.php/Run/Index/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:17:35+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:17:37+08:00 ] 127.0.0.1 /index.php/Run/Index/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:18:50+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:19:00+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:19:03+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:19:30+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/123123.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:19:46+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/123123.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:123123
+
+[ 2017-12-18T14:19:50+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/123123.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:20:29+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/123123.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:20:29+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/123123.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:20:30+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/123123.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:20:33+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:20:56+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:20:57+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:21:15+08:00 ] 127.0.0.1 /index.php/Run/Subscribe/zz.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:23:20+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:23:41+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:23:44+08:00 ] 127.0.0.1 /index.php/Run/Index/z.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:24:03+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:24:06+08:00 ] 127.0.0.1 /index.php/Run/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:24:37+08:00 ] 127.0.0.1 /index.php/Run/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:24:39+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:24:44+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:24:57+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:24:58+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T14:24:58+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:24:58+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:25:12+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:27:38+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:27:38+08:00 ] 127.0.0.1 /index.php/Run/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:27:40+08:00 ] 127.0.0.1 /index.php/zz/zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:27:44+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:27:45+08:00 ] 127.0.0.1 /index.php/Run/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:27:48+08:00 ] 127.0.0.1 /index.php/ZZ/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:28:04+08:00 ] 127.0.0.1 /index.php/ZZ/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:28:17+08:00 ] 127.0.0.1 /index.php/ZZ/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:29:24+08:00 ] 127.0.0.1 /index.php/ZZ/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:29:25+08:00 ] 127.0.0.1 /index.php/ZZ/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:29:27+08:00 ] 127.0.0.1 /index.php/zz/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:29:30+08:00 ] 127.0.0.1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:29:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:29:38+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:29:40+08:00 ] 127.0.0.1 /index.php/Login/loginOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:29:41+08:00 ] 127.0.0.1 /index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T14:29:41+08:00 ] 127.0.0.1 /index.php/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:29:43+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T14:29:43+08:00 ] 127.0.0.1 /index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T14:29:44+08:00 ] 127.0.0.1 /index.php/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:34:01+08:00 ] 127.0.0.1 /index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:34:01+08:00 ] 127.0.0.1 /index.php/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:34:05+08:00 ] 127.0.0.1 /index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:34:05+08:00 ] 127.0.0.1 /index.php/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:34:05+08:00 ] 127.0.0.1 /index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:34:05+08:00 ] 127.0.0.1 /index.php/Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:34:20+08:00 ] 127.0.0.1 /index.php/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '18483692324' LIMIT 1   [ RunTime:0.0390s ]
+SQL: UPDATE `waylib_user` SET `last_login_time`='2017-12-18 14:34:20' WHERE `user_id` = 218 [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0390s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 14:34:20',NULL,'管理员登录') [ RunTime:0.0420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T14:34:22+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:34:25+08:00 ] 127.0.0.1 /index.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:34:30+08:00 ] 127.0.0.1 /index.php/App/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:34:30+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T14:34:30+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:34:37+08:00 ] 127.0.0.1 /index.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:34:37+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:34:37+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:37:26+08:00 ] 127.0.0.1 /index.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:37:26+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:37:26+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:37:34+08:00 ] 127.0.0.1 /index.php/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:37:34+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:37:34+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:37:38+08:00 ] 127.0.0.1 /index.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:37:38+08:00 ] 127.0.0.1 /index.php/User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:37:38+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:37:38+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:37:41+08:00 ] 127.0.0.1 /index.php/Borrow/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:37:41+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:37:41+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:37:48+08:00 ] 127.0.0.1 /index.php/Borrow/index.html?ty=u_mobile&lib=SCYT001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:37:48+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:37:48+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:37:52+08:00 ] 127.0.0.1 /index.php/Catalog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:37:52+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:37:52+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:38:31+08:00 ] 127.0.0.1 /index.php/Library/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:38:31+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:38:31+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:38:37+08:00 ] 127.0.0.1 /index.php/Library/mach/libId/SCYT003.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:38:37+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:38:37+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:38:39+08:00 ] 127.0.0.1 /index.php/Run/Library/machOne.html?machId=SCYT00301
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_machine` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `waylib_machine` WHERE `machine_id` = 'SCYT00301' LIMIT 1   [ RunTime:0.0380s ]
+SQL: SHOW COLUMNS FROM `waylib_library` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `waylib_library` WHERE `id` = 'SCYT003' LIMIT 1   [ RunTime:0.0370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:38:48+08:00 ] 127.0.0.1 /index.php/Run/Library/machOne.html?machId=SCYT00301
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `waylib_machine` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `waylib_machine` WHERE `machine_id` = 'SCYT00301' LIMIT 1   [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `waylib_library` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `waylib_library` WHERE `id` = 'SCYT003' LIMIT 1   [ RunTime:0.0450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:38:54+08:00 ] 127.0.0.1 /index.php/Run/Library/editMach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_machine` [ RunTime:0.0420s ]
+SQL: UPDATE `waylib_machine` SET `library_id`='SCYT003',`machine_addr`='高攀路',`machine_name`='一号机',`machine_state`='1',`gps_latitude`='65455',`machine_type`='1',`gps_longitude`='415665' WHERE `machine_id` = 'SCYT00301' [ RunTime:0.0440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:38:55+08:00 ] 127.0.0.1 /index.php/Run/Library/mach.html?libId=SCYT003
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:38:56+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:38:56+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:41:26+08:00 ] 127.0.0.1 /index.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:41:26+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:41:26+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:42:24+08:00 ] 127.0.0.1 /index.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T14:42:24+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:42:24+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:42:41+08:00 ] 127.0.0.1 /index.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:42:41+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:42:41+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:42:47+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:42:47+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:42:47+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:42:51+08:00 ] 127.0.0.1 /Login/loginOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:42:52+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-12-18T14:42:52+08:00 ] 127.0.0.1 /Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:43:04+08:00 ] 127.0.0.1 /Login/ver.html?0.7393007732277528
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:43:10+08:00 ] 127.0.0.1 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '18483692324' LIMIT 1   [ RunTime:0.0440s ]
+SQL: UPDATE `waylib_user` SET `last_login_time`='2017-12-18 14:43:10' WHERE `user_id` = 218 [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0410s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 14:43:10',NULL,'管理员登录') [ RunTime:0.0460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:43:11+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:43:55+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:43:55+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:43:55+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:43:58+08:00 ] 127.0.0.1 /User/administer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:43:58+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:43:58+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:44:00+08:00 ] 127.0.0.1 /Borrow/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:44:00+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:44:00+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:44:06+08:00 ] 127.0.0.1 /App/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:44:06+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:44:06+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:44:09+08:00 ] 127.0.0.1 /zz/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:44:11+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T14:44:11+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:44:15+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:44:15+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T14:44:15+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T15:29:52+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T15:29:54+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T15:29:56+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T15:29:58+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T15:30:00+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T15:30:00+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T15:30:00+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T15:41:21+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T15:41:21+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T15:41:21+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T15:41:23+08:00 ] 127.0.0.1 /Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T15:41:23+08:00 ] 127.0.0.1 /Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T15:41:32+08:00 ] 127.0.0.1 /Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T15:41:32+08:00 ] 127.0.0.1 /Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T15:41:32+08:00 ] 127.0.0.1 /Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T15:41:33+08:00 ] 127.0.0.1 /Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T15:41:34+08:00 ] 127.0.0.1 /Run/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T15:41:34+08:00 ] 127.0.0.1 /Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T15:41:37+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T15:41:37+08:00 ] 127.0.0.1 /Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T15:41:42+08:00 ] 127.0.0.1 /index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:51:32+08:00 ] 127.0.0.1 /index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-12-18T16:52:23+08:00 ] 127.0.0.1 /index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:52:25+08:00 ] 127.0.0.1 /index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:52:25+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:52:38+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:52:39+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T16:52:39+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T16:52:40+08:00 ] 127.0.0.1 /index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:52:41+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:52:41+08:00 ] 127.0.0.1 /index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:52:42+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T16:52:42+08:00 ] 127.0.0.1 /index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:52:43+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T16:53:07+08:00 ] 127.0.0.1 /index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:53:07+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:53:08+08:00 ] 127.0.0.1 /index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-18T16:53:08+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T16:53:33+08:00 ] 127.0.0.1 /index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:53:33+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:53:36+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T16:53:36+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T16:53:36+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:53:39+08:00 ] 127.0.0.1 /Login/loginOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:53:40+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:53:40+08:00 ] 127.0.0.1 /Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T16:53:42+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:53:42+08:00 ] 127.0.0.1 /Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:53:42+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T16:54:06+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:54:06+08:00 ] 127.0.0.1 /Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:54:32+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:54:32+08:00 ] 127.0.0.1 /Login/ver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:54:41+08:00 ] 127.0.0.1 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `waylib_user` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `waylib_user` WHERE `u_mobile` = '18483692324' LIMIT 1   [ RunTime:0.0440s ]
+SQL: UPDATE `waylib_user` SET `last_login_time`='2017-12-18 16:54:41' WHERE `user_id` = 218 [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `waylib_admin_log` [ RunTime:0.0420s ]
+SQL: INSERT INTO `waylib_admin_log` (`user_id`,`create_time`,`change_user_id`,`var`) VALUES ('218','2017-12-18 16:54:41',NULL,'管理员登录') [ RunTime:0.0450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-18T16:54:43+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T16:54:46+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T16:54:46+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T16:54:47+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T17:00:26+08:00 ] 127.0.0.1 /Borrow/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T17:00:26+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-18T17:00:26+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T17:00:37+08:00 ] 127.0.0.1 /Borrow/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-18T17:00:37+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T17:00:37+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T17:42:09+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T17:42:10+08:00 ] 127.0.0.1 /Catalog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T17:42:10+08:00 ] 127.0.0.1 /Public/Run/js/need/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-18T17:42:10+08:00 ] 127.0.0.1 /Public/Run/js/skins/default/laydate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+

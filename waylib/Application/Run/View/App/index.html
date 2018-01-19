@@ -1,0 +1,118 @@
+<extend name="Common/base" />
+<block name="content">
+	<!--查看弹框开始-->
+	<div id="LoginBox2" class="outer">
+		<div class="rank_kuang outer">
+			<p>排序:</p>
+			<input type="text" placeholder="请输入序号数值" class="input-medium" id="sort"/>
+			<p style="color: #f24a42;font-size: 12px;">数值为整数</p>
+		</div>
+		<div class="sure_close outer">
+			<div class="sure_btn">
+				<a href="#" id="sort_btn" attr-library-id="{$libraryid}">确定</a>
+			</div>
+			<div class="close_btn">
+				<a href="#">取消</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			//排序修改
+			$('#sort_btn').click(function(){
+				var sort = $('#sort').val();
+				var libraryid = $(this).attr('attr-library-id');
+				var bookId = $(this).attr('attr-book_id');
+				if(!sort){
+					return dialog.error('请输入序号数值');
+				}else {
+					$.ajax({
+						type:'get',
+						url:"{:U('App/checkSort')}",
+						data:'sort='+sort+'&bookId='+bookId,
+						dataType:'json',
+						success:function(data){
+							if(data.code == 1){
+								var url = "{:U('App/index')}?libraryid="+libraryid;
+								return dialog.success('修改成功',url);
+							}else {
+								return dialog.error(data.message);
+							}
+						}
+					});
+				}
+			})
+		});
+	</script>
+	<!--查看弹框结束-->
+	<if condition="($status eq 1)">
+		<div class="choose">
+			<div class="kind">
+				<form class="outer">
+					<div class="choose5">
+						<p>图书馆</p>
+						<select id="lib">
+							<volist name="librarys" id="v">
+								<option value="{$v.id}" {$libraryid==$v[id]?'selected':''}>{$v.name}</option>
+							</volist>
+						</select>
+					</div>
+					<div class="search">
+						<img src="__IMG__/search.png" id="search"/>
+					</div>
+				</form>
+				<script>
+					$(function(){
+						//搜索
+						$('.search').click(function(){
+							var lib = $("#lib option:selected").val();//获取当前选择项的值.
+							location.href = "{:U('App/index')}?libraryid="+lib;
+//							console.log(lib);
+						});
+					})
+				</script>
+			</div>
+		</div>
+		<else />
+	</if>
+		<div class="main_biaoge">
+			<table  class="table1 table-bordered table-striped table table6 ">
+					<tr>
+						<th>排序</th>
+						<th>题名</th>
+						<th>ISBN</th>
+						<th>分类号</th>
+						<th>出版社</th>
+						<th>作者</th>
+						<th>修改排序</th>
+					</tr>
+					<volist name="lists" key="k" id="v">
+						<tr>
+							<td>{$k}</td>
+							<td>{$v.title}</td>
+							<td>{$v.isbn}</td>
+							<td>{$v.classification_num}</td>
+							<td>{$v.publisher}</td>
+							<td>{$v.author}</td>
+							<td><a href="#" class="example2" data-book_id="{$v.book_id}">修改</a></td>
+						</tr>
+					</volist>
+				</table>
+			<div class="reader_more">
+				<div class="pagelist">
+					{$page}
+				</div>
+			</div>
+		</div>
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$(".main_right_top ul").children(":eq(8)").addClass("on");
+			$(".main_right_top ul").children(":eq(8)").find("a").find(".icon2").show();
+			$(".main_right_top ul").children(":eq(8)").find("a").find(".icon1").hide();
+			$(".main_left_ul ul").children(":eq(0)").addClass("onup");
+
+		})
+	</script>
+</block>

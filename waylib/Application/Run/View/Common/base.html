@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="/Public/favicon.ico" rel="shortcut icon">
+		<title>{$webTitle}|智能微图后台管理系统</title>
+		<link rel="stylesheet" href="__CSS__/base.css" />
+		<link rel="stylesheet" href="__CSS__/bootstrap.min.css" />
+		<link rel="stylesheet" href="__CSS__/common.css" />
+		<link rel="stylesheet" href="__CSS__/main.css" />
+		<link rel="stylesheet" href="__CSS__/loginDialog.css" />
+		<link rel="stylesheet" href="__CSS__/laydate.css" />
+		<link rel="stylesheet" href="__CSS__/laydate1.css" />
+		<script type="text/javascript" src="__JS__/jquery-1.12.0.min.js" ></script>
+		<script type="text/javascript" src="__JS__/jquery.select.js" ></script>
+		<script type="text/javascript" src="__JS__/sha1.js"></script>
+		<script type="text/javascript" src="__JS__/index.js" ></script>
+		<script type="text/javascript" src="__JS__/layer/layer.js" ></script>
+		<script type="text/javascript" src="__JS__/dialog.js" ></script>
+		<script type="text/javascript" src="__JS__/base64.js"></script>
+		<script type="text/javascript" src="__JS__/laydate.js" ></script>
+		<script type="text/javascript" src="__JS__/run.js" ></script>
+		<script type="text/javascript" src="__JS__/Lunbo.js" ></script>
+		<block name="style"></block>
+	</head>
+	<body>
+		<block name="model"></block>
+		<div class="main outer">
+			<div class="main_left">
+				<div class="main_left_top">
+					<a href="{:U('Index/index')}"><img src="__IMG__/logo.png" /></a>
+				</div>
+				<div class="main_left_info">
+					<div class="super outer">
+						<div class="super_left">
+							<img src="{$photo|default='__IMG__/mrtx.png'}" />
+						</div>
+						<div class="super_right">
+							<p class="guanli_name">{$username|default='管理员'}<span>[{$role}]</span></p>
+							<a href="{:U('Login/checkPwd',['uId'=>$uId])}">修改密码</a>
+						</div>
+						<div class="tc1">
+							<a href="javaScript:;">
+								<img src="__IMG__/tc1.png" id="loginOut"/>
+							</a>
+						</div>
+					</div>
+					<script>
+						$(function(){
+							//退出登录
+							$('#loginOut').click(function(){
+								var url  = "{:U('Login/loginOut')}";
+								var jump_url = "{:U('Login/index')}";
+								$.ajax({
+									type:'get',
+									url:url,
+									data:'',
+									dataType:'json',
+									success:function(data){
+										if(data.code == 1) {
+											return dialog.success(data.message, jump_url);
+										}else {
+											return dialog.error(data.message);
+										}
+									}
+								});
+							});
+						})
+					</script>
+
+					<!--左侧菜单开始-->
+					<block name="menus">
+					<div class="main_left_ul">
+						<ul>
+							<li class="outer">
+								<a href="{:U('App/index')}" class="outer">
+									<img src="__IMG__/zj.png" />
+									<p>在架图书</p>
+								</a>
+							</li>
+							<li class="outer">
+								<a href="{:U('App/them')}" class="outer">
+									<img src="__IMG__/zttj.png" />
+									<p>专题推荐</p>
+								</a>
+							</li>
+							<li class="outer">
+								<a href="{:U('App/push')}" class="outer">
+									<img src="__IMG__/xxts.png" />
+									<p>消息推送</p>
+								</a>
+							</li>
+							<li class="outer">
+								<a href="{:U('App/backMoney')}" class="outer">
+									<img src="__IMG__/tyjsh.png" />
+									<p>退押金审核</p>
+								</a>
+							</li>
+							<li class="outer">
+								<a href="{:U('App/userBack')}" class="outer">
+									<img src="__IMG__/yhfk.png" />
+									<p>用户反馈</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					</block>
+					<div class="yun">
+						<p>技术支持：四川云图信息技术有限公司</p>
+					</div>
+					<!--左侧菜单结束-->
+				</div>
+			</div>
+			<div class="main_right">
+				<div class="main_right_top">
+					<ul>
+						<li>
+							<a href="{:U('User/index')}">
+								<img src="__IMG__/icon1/yonghuguanli.png" class="icon1"/>
+								<img src="__IMG__/icon/yonghuguanli.png" class="icon2"/>
+								<p>用户管理</p>
+							</a>
+						</li>
+						<li>
+							<a href="{:U('Borrow/index')}">
+								<img src="__IMG__/icon1/chaxun.png" class="icon1"/>
+								<img src="__IMG__/icon/chaxun.png" class="icon2"/>
+								<p>借阅查询</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="__IMG__/icon1/jiankong.png" class="icon1"/>
+								<img src="__IMG__/icon/jiankong.png" class="icon2"/>
+								<p>视频监控</p>
+							</a>
+						</li>
+						<li>
+							<a href="{:U('Catalog/index')}">
+								<img src="__IMG__/icon1/bianmu.png" class="icon1"/>
+								<img src="__IMG__/icon/bianmu.png" class="icon2"/>
+								<p>直接编目</p>
+							</a>
+						</li>
+						<li>
+							<a href="{:U('Subscribe/index')}">
+								<img src="__IMG__/icon1/dingyue.png" class="icon1"/>
+								<img src="__IMG__/icon/dingyue.png" class="icon2"/>
+								<p>订阅管理</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="__IMG__/icon1/dashuju.png" class="icon1"/>
+								<img src="__IMG__/icon/dashuju.png" class="icon2"/>
+								<p>大数据</p>
+							</a>
+						</li>
+						<li>
+							<a href="{:U('Exception/index')}">
+								<img src="__IMG__/icon1/yichang.png" class="icon1"/>
+								<img src="__IMG__/icon/yichang.png" class="icon2"/>
+								<p>异常处理</p>
+							</a>
+						</li>
+						<li>
+							<a href="{:U('Library/index')}">
+								<img src="__IMG__/icon1/tushu.png" class="icon1"/>
+								<img src="__IMG__/icon/tushu.png" class="icon2"/>
+								<p>图书馆管理</p>
+							</a>
+						</li>
+						<li>
+							<a href="{:U('App/index')}">
+								<img src="__IMG__/icon1/app.png" class="icon1"/>
+								<img src="__IMG__/icon/app.png" class="icon2"/>
+								<p>APP管理</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="main_right_bottom">
+					<div class="weizhi">
+						<p>
+							<a href="{:U('Index/index')}">首页></a>
+							<a href="{$titleUrl}">{$webTitle}></a>
+							<span>{$menu}</span>
+						</p>
+					</div>
+					<!--主体内容开始-->
+					<block name="content">
+					<div class="main_biaoge">
+						<table  class="table1 table-bordered table-striped table table5 ">
+								<tr>
+									<th>姓名</th>
+									<th>电话号码</th>
+									<th>用户名</th>
+									<th>图书馆</th>
+									<th>读者类型</th>
+									<th>性别</th>
+									<th>退押金审核状态</th>
+									<th>是否欠款</th>
+									<th>注册时间</th>
+									<th>最后一次登录时间</th>
+									<th>审核</th>
+								</tr>
+								<tr>
+									<td>小黄黄</td>
+									<td>18500941354</td>
+									<td>511024199310291783</td>
+									<td>阿坝州彝族自治州图书馆</td>
+									<td>微图用户</td>
+									<td>女</td>
+									<td>审核中</td>
+									<td>否</td>
+									<td>2017/10/29 15:30:20</td>
+									<td>2017/10/29 15:30:20</td>
+									<td><a href="#">审核通过</a></td>
+								</tr>
+							</table>
+						<div class="reader_more">
+							<div class="pagelist">
+								{$page}
+							</div>
+						</div>
+					</div>
+					</block>
+					<!--主体内容结束-->
+				</div>
+			</div>
+		</div>
+	<block name="script"></block>
+	</body>
+</html>
